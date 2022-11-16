@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo3.png">
+    <!-- Noto Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700&amp;display=swap"
+        rel="stylesheet">
+    <!-- Noto Serif Korean  -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <!-- Noto Sans Korean -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="css/common.css"> -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--스크립트 연결 -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/index.js"></script>    
+    <title>씨네Q</title> 
+</head>
+<body> 
+    <!-- 탑 배너 -->
+    <!-- <div class="topBanner">
+        <div class="topImg"> 
+            <img src="images/jj.png" alt="영화 동감 광고배너">
+        </div>
+        <a href="#void">닫기</a>
+    </div> -->
+    <!-- #header -->
+    <header id="header"></header>
+    <!-- 본문 -->
+    <div class="side_button">
+
+    </div>
+    <!-- 메인배너 페이드인아웃-->
+    <div id="mainBanner">
+        <ul class="bannerWrap">
+            <li class="activeBanner">                
+                <div class="bannerImg">
+                    <a href="#void">
+                      <img src="images/movie_image.jpg" alt="블랙팬서">
+                    </a>    
+                </div>
+            </li>
+            <li>
+                <div class="bannerImg">
+                    <a href="#void">
+                      <img src="images/movie_image2.jpg" alt="에브리씽 에브리웨어 올 앳 원스">
+                    </a>    
+                </div>
+            </li>
+            <li>
+                <div class="bannerImg">
+                    <a href="#void">
+                      <img src="images/movie_image3.jpg" alt="블랙팬서">
+                    </a>    
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- #container -->
+    <div id="container">      
+        <section class="sec_1">
+            <h2 class="blind">박스오피스</h2>
+            <div class="innerBox">
+                <div class="mainTitleBox">
+                    <h2 class="mainTitle">박스오피스</h2>
+                    <div class="subTitle">
+                        <span>최신개봉작</span><span>상영예정작</span>
+                    </div>
+                    <div class="lookBtn"><a href="#void">전체보기</a></div>
+                </div>
+            </div>
+            <!--영화포스터10개 -->
+            <div class="posterBox innerBox">
+                <ul class="posterWrap"> 
+                    <li>
+                        <div class="poster">
+                            <img src="images/poster1.jpg" alt="poster">
+                        </div>
+                        <p class="lank">1</p>
+                        <div class="hoverBtnWrap">
+                            <p class="infoBtn">상세정보</p>
+                            <p class="revBtn">예매하기</p>
+                        </div>
+                        <div class="scoreWrap">
+                            <p>관람평점 8.7</p>
+                            <p><span>♡</span> 1.3k</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="images/poster2.jpg" alt="poster">
+                        </div>
+                        <p class="lank">2</p>
+                        <div class="hoverBtnWrap">
+                            <p class="infoBtn">상세정보</p>
+                            <p class="revBtn">예매하기</p>
+                        </div>
+                        <div class="scoreWrap">
+                            <p>관람평점 8.7</p>
+                            <p><span>♡</span> 1.3k</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="images/poster3.jpg" alt="poster">
+                        </div>
+                        <p class="lank">3</p>
+                        <div class="hoverBtnWrap">
+                            <p class="infoBtn">상세정보</p>
+                            <p class="revBtn">예매하기</p>
+                        </div>
+                        <div class="scoreWrap">
+                            <p>관람평점 8.7</p>
+                            <p><span>♡</span> 1.3k</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="images/poster4.jpg" alt="poster">
+                        </div>
+                        <p class="lank">4</p>
+                        <div class="hoverBtnWrap">
+                            <p class="infoBtn">상세정보</p>
+                            <p class="revBtn">예매하기</p>
+                        </div>
+                        <div class="scoreWrap">
+                            <p>관람평점 8.7</p>
+                            <p><span>♡</span> 1.3k</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="images/poster5.jpg" alt="poster">
+                        </div>
+                        <p class="lank">5</p>
+                        <div class="hoverBtnWrap">
+                            <p class="infoBtn">상세정보</p>
+                            <p class="revBtn">예매하기</p>
+                        </div>
+                        <div class="scoreWrap">
+                            <p>관람평점 8.7</p>
+                            <p><span>♡</span> 1.3k</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="images/poster6.jpg" alt="poster">
+                        </div>
+                        <p class="lank">6</p>
+                        <div class="hoverBtnWrap">
+                            <p class="infoBtn">상세정보</p>
+                            <p class="revBtn">예매하기</p>
+                        </div>
+                        <div class="scoreWrap">
+                            <p>관람평점 8.7</p>
+                            <p><span>♡</span> 1.3k</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="images/poster7.jpg" alt="poster">
+                        </div>
+                        <p class="lank">7</p>
+                        <div class="hoverBtnWrap">
+                            <p class="infoBtn">상세정보</p>
+                            <p class="revBtn">예매하기</p>
+                        </div>
+                        <div class="scoreWrap">
+                            <p>관람평점 8.7</p>
+                            <p><span>♡</span> 1.3k</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="images/poster8.jpg" alt="poster">
+                        </div>
+                        <p class="lank">8</p>
+                        <div class="hoverBtnWrap">
+                            <p class="infoBtn">상세정보</p>
+                            <p class="revBtn">예매하기</p>
+                        </div>
+                        <div class="scoreWrap">
+                            <p>관람평점 8.7</p>
+                            <p><span>♡</span> 1.3k</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="images/poster9.jpg" alt="poster">
+                        </div>
+                        <p class="lank">9</p>
+                        <div class="hoverBtnWrap">
+                            <p class="infoBtn">상세정보</p>
+                            <p class="revBtn">예매하기</p>
+                        </div>
+                        <div class="scoreWrap">
+                            <p>관람평점 8.7</p>
+                            <p><span>♡</span> 1.3k</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="images/poster10.jpg" alt="poster">
+                        </div>
+                        <p class="lank">10</p>
+                        <div class="hoverBtnWrap">
+                            <p class="infoBtn">상세정보</p>
+                            <p class="revBtn">예매하기</p>
+                        </div>
+                        <div class="scoreWrap">
+                            <p>관람평점 8.7</p>
+                            <p><span>♡</span> 1.3k</p>
+                        </div>
+                    </li>
+                </ul>  
+                <div class="arrow">
+                    <div class="prev"><img src="images/btn-slider-event-prev.png" alt="이전"></div>
+                    <div class="next"><img src="images/btn-slider-event-next.png" alt="다음"></div>
+                </div>        
+            </div>                  
+        </section>
+        <!-- 혜택 -->
+        <section class="sec_2">
+            <h2 class="blind">혜택</h2>
+            <div class="innerBox">
+                <div class="mainTitleBox">
+                    <h2 class="mainTitle">혜택</h2>                    
+                    <div class="lookBtn"><a href="#void">전체보기</a></div>
+                </div>
+                <ul class="eventCopy_wrap clearFix">
+                    <li><a href="#void"><img src="images/copy1.jpg" alt="미니팝콘"></a></li>
+                    <li><a href="#void"><img src="images/copy2.jpg" alt="영화제목"></a></li>
+                    <li><a href="#void"><img src="images/copy3.jpg" alt="코로나"></a></li>
+                    <li><a href="#void"><img src="images/copy4.jpg" alt="탄산음료"></a></li>
+                </ul>
+                <ul class="eventIcon_wrap">
+                    <li><a href="#"><span class="eventIcon"><img src="images/gift_birthday_present_box.svg" alt="멤버쉽"></span><span>멤버쉽</span></a></li>
+                    <li><a href="#"> <span class="eventIcon"><img src="images/gift_coupon.svg" alt="할인카드"></span><span>할인카드</span></a></li>
+                    <li><a href="#"> <span class="eventIcon"><img src="images/event-star.svg" alt="이벤트"></span><span>이벤트</span></a></li>
+                    <li><a href="#"> <span class="eventIcon"><img src="images/gift_birthday_present_box.svg" alt="스토어"></span><span>스토어</span></a></li>
+                    <li><a href="#"> <span class="eventIcon"><img src="images/info.svg" alt="분실물"></span><span>분실물</span></a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- 이벤트 -->
+        <section class="sec_3">
+            <h2 class="blind">이벤트</h2>
+            <div class="innerBox">
+                <div class="mainTitleBox">
+                    <h2 class="mainTitle">이벤트</h2>                    
+                    <div class="lookBtn"><a href="#void">전체보기</a></div>
+                </div>
+                <ul class="eventWrap">
+                    <li>
+                        <div class="event_imgWrap">
+                            <a href="#void"><img src="images/poster11.jpg" alt="탑"></a>
+                        </div>
+                        <div class="event_textWrap">
+                            <p class="eventTitle">영화 탑> 관람 인증 이벤트</p>
+                            <p>2022.11.09~2022.11.22</p>
+                        </div>                        
+                    </li>
+                    <li>
+                        <div class="event_imgWrap">
+                            <a href="#void"><img src="images/poster0.jpg" alt="블랙 팬서"></a>
+                        </div>
+                        <div class="event_textWrap">
+                            <p class="eventTitle">블랙 팬서: 와칸다 포에버> 관람 인증 이벤트</p>
+                            <p>2022.11.09~2022.11.22</p>
+                        </div>                        
+                    </li>
+                    <li>
+                        <div class="event_imgWrap">
+                            <a href="#void"><img src="images/poster12.jpg" alt="고속도로 가족"></a>
+                        </div>
+                        <div class="event_textWrap">
+                            <p class="eventTitle">영화 고속도로 가족> 포스터 증정 이벤트</p>
+                            <p>2022.11.09~2022.11.22</p>
+                        </div>                        
+                    </li>
+                    <li>
+                        <div class="event_imgWrap">
+                            <a href="#void"><img src="images/poster14.jpg" alt="탑"></a>
+                        </div>
+                        <div class="event_textWrap">
+                            <p class="eventTitle">영화 피가로피가로> 관람 인증 이벤트</p>
+                            <p>2022.11.09~2022.11.22</p>
+                        </div>                        
+                    </li>                        
+                </ul>
+            </div>
+        </section>
+        <!-- 유튜브 -->
+        <!-- <section class="sec_3_2">
+            <div class="innerBox">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hXa0Uib7X5k?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+            </div>
+        </section>             -->
+        <!-- 공지사항 -->
+        <section class="sec_4">
+            <h2 class="blind">공지사항</h2>
+            <div class="innerBox">
+                <div class="notice">
+                    <h2>공지사항 <span class="noticeIcon"><img src="images/notice_icon.svg" alt="공지사항"></span></h2>
+                    <a href="#" class="more">더보기</a>
+                    <ul class="noticeList">
+                        <li><a href="#void">구미봉곡 | 씨네Q 구미봉곡점 11월 휴무일 안내<span>22.10.27</span></a></li>
+                        <li><a href="#void">천안불당 | 씨네Q 천안불당점 관람요금 변경안내<span>22.10.25</span></a></li>
+                        <li><a href="#void">구미봉곡 | 씨네Q 구미봉곡점 10월 휴무일 안내<span>22.09.28</span></a></li>
+                        <li><a href="#void">구미봉곡 | 씨네Q 구미봉곡점 9월 휴무일 안내<span>22.08.29</span></a></li>
+                        <li><a href="#void">전체글 | 씨네Q 영화 관람권 요금 조정 안내 <span>22.08.26</span></a></li>
+                        <li><a href="#void">구미봉곡 | 씨네Q 구미봉곡점 11월 휴무일 안내<span>22.10.27</span></a></li>
+                        <li><a href="#void">천안불당 | 씨네Q 천안불당점 관람요금 변경안내<span>22.10.25</span></a></li>
+                        <li><a href="#void">구미봉곡 | 씨네Q 구미봉곡점 10월 휴무일 안내<span>22.09.28</span></a></li>
+                        <li><a href="#void">구미봉곡 | 씨네Q 구미봉곡점 9월 휴무일 안내<span>22.08.29</span></a></li>
+                    </ul>
+                </div>
+                <div class="customerCenter">
+                    <div class="centerTextBox">
+                        <h2>고객센터</h2>
+                        <strong>1544-1533</strong>
+                        <p>고객센터 운영시간 (평일 09:00~18:00)
+                            업무시간 외 자동응답 안내 가능합니다.</p>
+                    </div>
+                    <div class="faqWrap clearFix">
+                        <p>FAQ</p>
+                        <p>1:1문의</p>
+                        <p>대관/단체 문의</p>
+                    </div>                    
+                </div>
+                <div class="snack">
+                    <div class="snackTextBox">
+                        <h2>씨네큐 스낵</h2>
+                        <a href="#" class="more">더보기</a>
+                    </div>
+                    <ul class="snackList">
+                        <li class="snackOn">
+                            <div class="snackImg">
+                                <a href="#void"><img src="images/popcon.png" alt="팝콘"></a>
+                            </div>
+                            <p class="snackName">씨네큐 콤보 <span>8,000원</span></p>
+                        </li>
+                        <li>
+                            <div class="snackImg">
+                            <a href="#void"><img src="images/nacho.png" alt="나쵸"></a>
+                        </div>
+                        <p class="snackName">나쵸 콤보 <span>7,000원</span></p>
+                        </li>
+                        <li>
+                            <div class="snackImg">
+                            <a href="#void"><img src="images/hotdog.png" alt="핫도그"></a>
+                        </div>
+                        <p class="snackName">핫도그 콤보 <span>6,000원</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 광고배너 -->
+        <section class="sec_5">
+            <h2 class="blind">광고배너</h2>            
+            <div class="innerBox">
+                <div class="copySubBanner">
+                    <img src="images/j.jpg" alt="영화 동감 광고배너">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- #footer -->
+    <footer id="footer"></footer>
+</body>
+</html>

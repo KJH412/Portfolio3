@@ -1,0 +1,50 @@
+@import url(../css/common.css);
+
+//반응형
+$Mobile1279:1279px;
+$Mobile1000:1000px;
+$Mobile767:767px;
+$Mobile480:480px;
+@mixin respond($media){
+    @media screen and (max-width:$media) {
+        @content;
+    }
+} //사용시 @include respond($Mobile767){속성;} 
+
+.footerWrap{
+    background: #333;
+    color: #ccc;
+
+    >div{
+        padding-left: 40px;  
+        @include respond($Mobile480){
+            padding: 0 20px;
+        } 
+    }
+    h2{
+        padding: 20px 0;
+        @include respond($Mobile1000){
+            // text-align: center;
+        }
+    }
+    
+    .footer_service{
+        display: flex;
+        flex-wrap: wrap;
+        
+        >li{
+            padding: 0 10px 0 0;
+            >a{
+                font-size: 1.2em;
+                font-weight: bold;
+                line-height: 1.5;
+                color: #ccc; 
+            }
+            
+        }
+    }
+    .copyright{
+        padding: 20px 0;
+    }
+}
+
