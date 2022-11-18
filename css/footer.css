@@ -1,0 +1,35 @@
+@import url(../css/common.css);
+.footerWrap {
+  background: #333;
+  color: #ccc;
+}
+.footerWrap > div {
+  padding-left: 40px;
+}
+@media screen and (max-width: 480px) {
+  .footerWrap > div {
+    padding: 0 20px;
+  }
+}
+.footerWrap h2 {
+  padding: 20px 0;
+}
+.footerWrap .footer_service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footerWrap .footer_service > li {
+  padding: 0 10px 0 0;
+}
+.footerWrap .footer_service > li > a {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #ccc;
+}
+.footerWrap .copyright {
+  padding: 20px 0;
+}

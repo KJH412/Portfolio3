@@ -1,0 +1,132 @@
+@import url(../css/common.css);
+body {
+  font-size: 12px;
+  font-family: "Noto sans", sans-serif;
+}
+
+.innerBox {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 0, 0, 0.3);
+  position: relative;
+}
+
+.hamBtn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.hamBtn > a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/ham.svg);
+  text-indent: -99999px;
+}
+.hamBtn > .cancel {
+  background-image: url(../images/cancel.svg);
+}
+
+header .headerBox .headerTop {
+  position: relative;
+  text-align: center;
+}
+header .headerBox .headerTop .logo {
+  position: relative;
+  top: 30px;
+}
+header .headerBox .headerTop .gnbWrap .simpleRrv {
+  position: absolute;
+}
+header .headerBox .headerTop .gnbWrap .simpleRrv > p {
+  background: #E60012;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+}
+header .headerBox .headerTop .gnbWrap .rightGnb {
+  position: absolute;
+  right: 0;
+  gap: 30px;
+}
+header .headerBox .headerTop .gnbWrap .rightGnb > li {
+  width: 30px;
+  height: 30px;
+  float: left;
+  padding: 0 10px;
+}
+header .headerBox .headerTop .gnbWrap .rightGnb > li img {
+  width: 100%;
+}
+header .headerBox .headerTop .gnbWrap .rightGnb > li span {
+  word-break: keep-all;
+  font-size: 0.7em;
+}
+header .headerBox .headerBottom {
+  position: relative;
+  top: 50px;
+  border-bottom: 2px solid #E60012;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .headerBox .headerBottom nav #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+header .headerBox .headerBottom nav #nav:hover .sub {
+  display: block;
+}
+header .headerBox .headerBottom nav #nav > li {
+  position: relative;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0 20px;
+}
+header .headerBox .headerBottom nav #nav > li .sub {
+  display: none;
+  background-color: skyblue;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+}
+header .headerBox .headerBottom nav #nav > li .sub > li a {
+  font-size: 0.8em;
+}
+header .headerBox .headerBottom .searchForm {
+  right: 0;
+}
+header .headerBox .headerBottom .searchForm > form {
+  background-color: white;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+}
+header .headerBox .headerBottom .searchForm > form input {
+  border: none;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+  outline: none;
+}
+header .headerBox .headerBottom .searchForm > form button {
+  border: none;
+  background: url(../images/clock.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+}
+header .headerBox .headerBottom .searchForm > form button img {
+  width: 100%;
+  height: 100%;
+}

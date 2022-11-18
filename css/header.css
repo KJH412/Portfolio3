@@ -1,0 +1,280 @@
+@import url(../css/common.css);
+body {
+  font-size: 12px;
+  font-family: "Noto sans", sans-serif;
+}
+
+.innerBox {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hamBtn {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+.hamBtn > a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/ham.svg);
+  text-indent: -99999px;
+}
+.hamBtn > .cancel {
+  background-image: url(../images/cancel.svg);
+}
+@media screen and (max-width: 1000px) {
+  .hamBtn {
+    display: block;
+    z-index: 150;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hamBtn {
+    top: 25px;
+  }
+}
+
+.mobileTicket {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .mobileTicket {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    z-index: 150;
+  }
+}
+.mobileTicket > a {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background: url(../images/Ticket-icon_mobile.png) no-repeat;
+  text-indent: -99999px;
+}
+@media screen and (max-width: 480px) {
+  .mobileTicket {
+    top: 10px;
+  }
+}
+
+header {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid #E60012;
+  background-color: white;
+}
+header .headerBox .headerTop {
+  position: relative;
+  text-align: center;
+}
+header .headerBox .headerTop .logo {
+  position: relative;
+  top: 30px;
+  z-index: 150;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  header .headerBox .headerTop .logo {
+    width: 130px;
+    height: 30px;
+  }
+  header .headerBox .headerTop .logo img {
+    width: 100%;
+  }
+}
+header .headerBox .headerTop .gnbWrap .simpleRrv {
+  position: absolute;
+  cursor: pointer;
+  z-index: 150;
+}
+@media screen and (max-width: 1000px) {
+  header .headerBox .headerTop .gnbWrap .simpleRrv {
+    display: none;
+  }
+}
+header .headerBox .headerTop .gnbWrap .simpleRrv > p {
+  background: #E60012;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .headerBox .headerTop .gnbWrap .simpleRrv:hover p {
+  background: #C39C71;
+}
+header .headerBox .headerTop .gnbWrap .rightGnb {
+  position: absolute;
+  right: 0;
+  gap: 30px;
+}
+@media screen and (max-width: 1000px) {
+  header .headerBox .headerTop .gnbWrap .rightGnb {
+    display: none;
+  }
+}
+header .headerBox .headerTop .gnbWrap .rightGnb > li {
+  width: 30px;
+  height: 30px;
+  float: left;
+  padding: 0 10px;
+}
+header .headerBox .headerTop .gnbWrap .rightGnb > li:hover img {
+  -webkit-animation-name: rotation;
+          animation-name: rotation;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate3d(1, 1, 1, 0deg);
+            transform: rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
+            transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate3d(1, 1, 1, 0deg);
+            transform: rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
+            transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+header .headerBox .headerTop .gnbWrap .rightGnb > li img {
+  width: 100%;
+}
+header .headerBox .headerTop .gnbWrap .rightGnb > li span {
+  word-break: keep-all;
+  font-size: 0.7em;
+}
+header .headerBox .headerBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+@media screen and (max-width: 1000px) {
+  header .headerBox .headerBottom nav {
+    position: fixed;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    width: 60%;
+    height: 100vh;
+    z-index: 100;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    right: -100%;
+  }
+}
+header .headerBox .headerBottom nav.on {
+  right: 0%;
+}
+header .headerBox .headerBottom nav #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 1000px) {
+  header .headerBox .headerBottom nav #nav {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 150px;
+    line-height: 4;
+    text-align: center;
+  }
+}
+header .headerBox .headerBottom nav #nav > li {
+  position: relative;
+  padding: 0 40px;
+}
+header .headerBox .headerBottom nav #nav > li > a {
+  font-size: 18px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+  header .headerBox .headerBottom nav #nav > li > a {
+    font-size: 23px;
+  }
+}
+header .headerBox .headerBottom nav #nav > li > .sub {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  header .headerBox .headerBottom nav #nav > li > .sub {
+    background-color: transparent;
+    position: relative;
+    top: 0;
+  }
+}
+header .headerBox .headerBottom nav #nav > li > .sub > li a {
+  font-size: 1.2em;
+  line-height: 2;
+}
+@media screen and (max-width: 1000px) {
+  header .headerBox .headerBottom nav #nav > li > .sub > li a {
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header .headerBox .headerBottom .searchForm {
+    display: none;
+  }
+}
+header .headerBox .headerBottom .searchForm > form {
+  background-color: white;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+}
+header .headerBox .headerBottom .searchForm > form input {
+  border: none;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+  outline: none;
+  width: 80%;
+}
+header .headerBox .headerBottom .searchForm > form button {
+  border: none;
+  position: absolute;
+  right: 10px;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  background: url(../images/clock.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+}
+header .headerBox .headerBottom .searchForm > form button img {
+  width: 100%;
+  height: 100%;
+}
