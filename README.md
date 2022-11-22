@@ -13,4 +13,4 @@
 ### 작업
 - HTML5
 - SCSS
-- 
+- jQuery
