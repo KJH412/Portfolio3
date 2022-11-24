@@ -1,7 +1,6 @@
 @import url(../css/common.css);
-body {
-  font-size: 12px;
-  font-family: "Noto sans", sans-serif;
+* {
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .innerBox {
@@ -66,7 +65,7 @@ body {
 
 header {
   z-index: 100;
-  position: fixed;
+  position: relative;
   width: 100%;
   border-bottom: 2px solid #E60012;
   background-color: white;
@@ -163,7 +162,6 @@ header .headerBox .headerTop .gnbWrap .rightGnb > li img {
 }
 header .headerBox .headerTop .gnbWrap .rightGnb > li span {
   word-break: keep-all;
-  font-size: 0.7em;
 }
 header .headerBox .headerBottom {
   display: -webkit-box;
@@ -212,6 +210,7 @@ header .headerBox .headerBottom nav #nav > li {
 header .headerBox .headerBottom nav #nav > li > a {
   font-size: 18px;
   font-weight: bold;
+  color: #333;
 }
 @media screen and (max-width: 1000px) {
   header .headerBox .headerBottom nav #nav > li > a {

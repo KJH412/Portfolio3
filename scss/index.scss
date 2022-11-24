@@ -1,5 +1,7 @@
 @import url(../css/common.css);
 
+$mainColor:#E60012;
+$hovColor:#C39C71;
 
 //반응형
 $Mobile1279:1279px;
@@ -12,12 +14,14 @@ $Mobile480:480px;
     }
 } //사용시 @include respond($Mobile767){속성;} 
 
-
 @mixin mainTitle{  //타이틀 속성
     color:white;
     font-size: 3em;
     // cursor: pointer;
     padding-left: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    
     @include respond($Mobile480){
         font-size: 2.5em;
     }
@@ -27,7 +31,7 @@ $Mobile480:480px;
     top: 10px;
     right: 0;
     color: #000;
-    font-weight: bold;
+    // font-weight: bold;
     font-size: 1.2em;
     background: white;
     width: 150px;
@@ -37,12 +41,17 @@ $Mobile480:480px;
     border-radius: 10px;
     border: 1px solid #ccc;
     &:hover{
-    filter: drop-shadow(0 0 3px #666);    
+        filter: drop-shadow(0 0 3px #666);
+    }
+    &:hover a{
+        color: $hovColor;
     }
     @include respond($Mobile480){
-        top: 0px;
+        top: 10px;
         font-size: 1em;
         width: 100px;
+        height: 35px;      
+        line-height: 35px;
     }
 }
 @mixin  noticeTitle{  //sec_4 제목
@@ -61,7 +70,7 @@ $Mobile480:480px;
     padding: 7px 25px;
     background-color: white;
     &:hover{
-        filter: drop-shadow(0 0 3px #666);    
+        filter: drop-shadow(0 0 3px #ccc);    
     }
 }
 
@@ -103,7 +112,6 @@ $Mobile480:480px;
         padding: 5px 10px;
     }
 }
-
 // ---------메인배너
 #mainBanner{
     overflow: hidden;
@@ -368,6 +376,7 @@ $Mobile480:480px;
                         display: block;
                         color: #fff;
                         line-height: 2;
+                        text-align: center;
                         
                         &.eventIcon{
                         width: 40px;
@@ -405,9 +414,10 @@ $Mobile480:480px;
         .eventWrap{
             display: flex;
             justify-content: space-around;
-            padding: 20px 0;
+            padding: 20px 0px;
             @include respond($Mobile480){
                 // width: 200%
+                padding: 20px 20px;
             }
             >li{
                 width: 24%;
@@ -460,7 +470,7 @@ $Mobile480:480px;
     }
     .sec_4{
         // background-color: #fff;
-        padding: 30px 0 ;
+        padding: 30px 20px;
 
         >div{
             display: flex;
@@ -575,7 +585,8 @@ $Mobile480:480px;
                     background: #ddd;
                 }                
                 @include respond($Mobile480){
-                     bottom: 5px;      
+                     bottom: 5px;  
+                     padding-bottom: 5px;    
                 } 
             }
         }

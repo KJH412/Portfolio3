@@ -1,5 +1,4 @@
 @import url(../css/common.css);
-
 $mainColor:#E60012;
 $hovColor:#C39C71; //호버
 
@@ -22,11 +21,9 @@ $Mobile480:480px;
         @content;
     }
 } 
-
-
-body{
-    font-size: 12px;
-    font-family: 'Noto sans', sans-serif;
+*{
+    // font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .innerBox{
     // background-color: rgba(0,255,0,0.3);
@@ -87,13 +84,14 @@ body{
 // header
 header{
     z-index: 100;
-    position: fixed;
+    // position: fixed;
+    position: relative;
     width: 100%;
     border-bottom: 2px solid $mainColor;
     background-color: white;
-    // background-color: rgba(255,255,255,0.7);
-   
+    // background-color: rgba(255,255,255,0.7);   
     .headerBox{      
+
         .headerTop{
             position: relative;
             text-align: center;    
@@ -179,7 +177,7 @@ header{
                         }
                         span{
                             word-break: keep-all;
-                            font-size: 0.7em;
+                            // font-size: 0.7em;
                         }
                     }
                 }
@@ -233,6 +231,7 @@ header{
                         >a{
                             font-size: 18px;
                             font-weight: bold;    
+                            color: #333;
 
                             @include respond($Mobile1000){
                                 font-size: 23px;

@@ -11,9 +11,10 @@ $Mobile480:480px;
     }
 } //사용시 @include respond($Mobile767){속성;} 
 
+
 .footerWrap{
     background: #333;
-    color: #ccc;
+    color: #7d7d7d;
 
     >div{
         padding-left: 40px;  
@@ -38,7 +39,7 @@ $Mobile480:480px;
                 font-size: 1.2em;
                 font-weight: bold;
                 line-height: 1.5;
-                color: #ccc; 
+                color: #7d7d7d;
             }
             
         }

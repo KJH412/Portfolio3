@@ -105,6 +105,8 @@
   color: white;
   font-size: 3em;
   padding-left: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
   float: left;
 }
 @media screen and (max-width: 480px) {
@@ -134,7 +136,6 @@
   top: 10px;
   right: 0;
   color: #000;
-  font-weight: bold;
   font-size: 1.2em;
   background: white;
   width: 150px;
@@ -148,11 +149,16 @@
   -webkit-filter: drop-shadow(0 0 3px #666);
           filter: drop-shadow(0 0 3px #666);
 }
+#container .sec_1 .mainTitleBox .lookBtn:hover a {
+  color: #C39C71;
+}
 @media screen and (max-width: 480px) {
   #container .sec_1 .mainTitleBox .lookBtn {
-    top: 0px;
+    top: 10px;
     font-size: 1em;
     width: 100px;
+    height: 35px;
+    line-height: 35px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -274,6 +280,8 @@
   color: white;
   font-size: 3em;
   padding-left: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
 }
 @media screen and (max-width: 480px) {
   #container .sec_2 .mainTitle {
@@ -290,7 +298,6 @@
   top: 10px;
   right: 0;
   color: #000;
-  font-weight: bold;
   font-size: 1.2em;
   background: white;
   width: 150px;
@@ -304,11 +311,16 @@
   -webkit-filter: drop-shadow(0 0 3px #666);
           filter: drop-shadow(0 0 3px #666);
 }
+#container .sec_2 .lookBtn:hover a {
+  color: #C39C71;
+}
 @media screen and (max-width: 480px) {
   #container .sec_2 .lookBtn {
-    top: 0px;
+    top: 10px;
     font-size: 1em;
     width: 100px;
+    height: 35px;
+    line-height: 35px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -358,6 +370,7 @@
   display: block;
   color: #fff;
   line-height: 2;
+  text-align: center;
 }
 #container .sec_2 .eventIcon_wrap > li > a span.eventIcon {
   width: 40px;
@@ -375,6 +388,8 @@
   color: white;
   font-size: 3em;
   padding-left: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
   color: #000;
 }
 @media screen and (max-width: 480px) {
@@ -387,7 +402,6 @@
   top: 10px;
   right: 0;
   color: #000;
-  font-weight: bold;
   font-size: 1.2em;
   background: white;
   width: 150px;
@@ -401,11 +415,16 @@
   -webkit-filter: drop-shadow(0 0 3px #666);
           filter: drop-shadow(0 0 3px #666);
 }
+#container .sec_3 .lookBtn:hover a {
+  color: #C39C71;
+}
 @media screen and (max-width: 480px) {
   #container .sec_3 .lookBtn {
-    top: 0px;
+    top: 10px;
     font-size: 1em;
     width: 100px;
+    height: 35px;
+    line-height: 35px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -419,7 +438,12 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 20px 0;
+  padding: 20px 0px;
+}
+@media screen and (max-width: 480px) {
+  #container .sec_3 .eventWrap {
+    padding: 20px 20px;
+  }
 }
 #container .sec_3 .eventWrap > li {
   width: 24%;
@@ -465,7 +489,7 @@
   padding: 30px 0;
 }
 #container .sec_4 {
-  padding: 30px 0;
+  padding: 30px 20px;
 }
 #container .sec_4 > div {
   display: -webkit-box;
@@ -533,8 +557,8 @@
   background-color: white;
 }
 #container .sec_4 .notice .more:hover {
-  -webkit-filter: drop-shadow(0 0 3px #666);
-          filter: drop-shadow(0 0 3px #666);
+  -webkit-filter: drop-shadow(0 0 3px #ccc);
+          filter: drop-shadow(0 0 3px #ccc);
 }
 #container .sec_4 .notice .noticeList {
   display: block;
@@ -606,6 +630,7 @@
 @media screen and (max-width: 480px) {
   #container .sec_4 .customerCenter .faqWrap {
     bottom: 5px;
+    padding-bottom: 5px;
   }
 }
 #container .sec_4 .snack {
@@ -638,8 +663,8 @@
   background-color: white;
 }
 #container .sec_4 .snack .snackTextBox .more:hover {
-  -webkit-filter: drop-shadow(0 0 3px #666);
-          filter: drop-shadow(0 0 3px #666);
+  -webkit-filter: drop-shadow(0 0 3px #ccc);
+          filter: drop-shadow(0 0 3px #ccc);
 }
 #container .sec_4 .snack > .snackList {
   position: relative;

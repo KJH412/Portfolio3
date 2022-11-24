@@ -1,7 +1,7 @@
 @import url(../css/common.css);
 .footerWrap {
   background: #333;
-  color: #ccc;
+  color: #7d7d7d;
 }
 .footerWrap > div {
   padding-left: 40px;
@@ -28,7 +28,7 @@
   font-size: 1.2em;
   font-weight: bold;
   line-height: 1.5;
-  color: #ccc;
+  color: #7d7d7d;
 }
 .footerWrap .copyright {
   padding: 20px 0;

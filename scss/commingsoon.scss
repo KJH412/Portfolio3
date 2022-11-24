@@ -1,0 +1,32 @@
+@import url(../css/common.css);
+
+#noContent{
+    // height: 510px;
+    height: 60vh; 
+    text-align: center;
+    z-index: 100;
+    position: relative;
+    
+    .no_imgBox{
+        width: 100%;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%,-50%);
+
+        img{
+            width: 100px;
+        }  
+
+        .no_txtBox{
+
+            >h3{
+                font-size: 30px;
+            }
+            >p{
+                font-size: 16px;
+                word-break: keep-all;
+            }
+        }
+    }
+}

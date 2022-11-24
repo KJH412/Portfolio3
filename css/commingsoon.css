@@ -1,0 +1,25 @@
+@import url(../css/common.css);
+#noContent {
+  height: 60vh;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+}
+#noContent .no_imgBox {
+  width: 100%;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+#noContent .no_imgBox img {
+  width: 100px;
+}
+#noContent .no_imgBox .no_txtBox > h3 {
+  font-size: 30px;
+}
+#noContent .no_imgBox .no_txtBox > p {
+  font-size: 16px;
+  word-break: keep-all;
+}
