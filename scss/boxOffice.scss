@@ -1,0 +1,59 @@
+@import url(../css/common.css);
+
+$mainColor:#E60012;
+$hovColor:#C39C71;
+
+//반응형
+$Mobile1279:1279px;
+$Mobile1000:1000px;
+$Mobile767:767px;
+$Mobile480:480px;
+@mixin respond($media){
+    @media screen and (max-width:$media) {
+        @content;
+    }
+} 
+@mixin rank {
+    color: white; 
+    font-size: 3.5em;
+    transform: skewX(-20deg);
+    text-shadow: 0 0 5px #000;    
+}
+.rank{
+    @include rank();
+}
+// 숨겨놓음.
+.movie_info{
+    display: none;
+}
+//본문
+#container{
+    position: relative;
+    .contents{
+        // 마진탑을 주면 헤더가 이상해짐
+        position: relative;
+        top: 100px;
+
+        .pageTit{ //스크롤내렸다올리면 헤더에 영역이 덮힘..
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+        .topList{
+
+            .topMenu{
+                display: flex;
+                width: 100%;
+                li{
+                    width: 33%;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    border: 1px solid #666;
+                    >a{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }//.contents
+}//#container

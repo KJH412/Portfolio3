@@ -73,6 +73,12 @@ $Mobile480:480px;
         filter: drop-shadow(0 0 3px #ccc);    
     }
 }
+@mixin rank {
+    color: white; 
+    font-size: 3.5em;
+    transform: skewX(-20deg);
+    text-shadow: 0 0 5px #000;    
+}
 
 .modal{
     z-index: 100;
@@ -240,11 +246,8 @@ $Mobile480:480px;
                             height: 100%;
                         }
                     }
-                    .lank{
-                        color: white; 
-                        font-size: 3.5em;
-                        transform: skewX(-20deg);
-                        text-shadow: 0 0 5px #000;
+                    .rank{
+                        @include rank();
                         position: absolute;
                         bottom: 35px;
                         left: 30px;

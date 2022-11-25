@@ -241,7 +241,7 @@ header{
                             // display: none;
                             width: 100%;
                             height: 200px;
-                            background-color: white;
+                            background-color: #efefef;
                             position: absolute;
                             top: 32px;
                             left: 0;
@@ -291,9 +291,10 @@ header{
                     }
                     button{
                         border: none;
-                        @include myPos($bottom:50%,$right:10px);
+                        background: transparent;                        
+                        @include myPos($bottom:50%,$right:25px);
                         transform: translateY(50%);
-                        background: url(../images/clock.svg) no-repeat;
+                        // background: url(../images/clock.svg) no-repeat;
                         width: 20px;
                         height: 20px;
                         img{
