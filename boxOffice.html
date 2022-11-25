@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo3.png">
+    <title>씨네Q</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/boxOffice.css">
+    <!--스크립트 연결 -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- #header -->
+    <header id="header"></header>
+    <!-- 본문 -->
+    <div id="container">
+        <div class="contents">
+            <div class="innerBox">
+            <h2 class="pageTit">전체영화</h2>
+            <!-- 탑메뉴 -->
+            <div class="topList">
+                <ul class="topMenu">
+                    <li class="thisOn"><a href="#void">박스오피스</a></li>
+                    <li><a href="#void">최신개봉작</a></li>
+                    <li><a href="#void">상영예정작</a></li>
+                </ul>
+            </div>
+            <!-- 영화리스트-박스오피스 -->
+            <div class="movieList_boxOffice">
+                <ul>
+                    <li>
+                        <div class="posterImg">
+                            <img src="images/poster1.jpg" alt="블랙팬서">
+                            <p class="rank">1</p>
+                            <div class="movie_info">
+                                <a href="#void">
+                                    <div class="infoText">
+                                        <p>“와칸다를 지켜라!”</p>
+                                        <p>거대한 두 세계의 충돌, 운명을 건 최후의 전투가 시작된다!
+                                        국왕이자 ‘블랙 팬서’인 '티찰라'의 죽음 이후
+                                        수많은 강대국으로부터 위협을 받게 된 '와칸다'.
+                                        '라몬다', '슈리' 그리고 '나키아', '오코예, '음바쿠'는
+                                        각자 사명감을 갖고 '와칸다'를 지키기 위해 외로운 싸움을 이어간다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="titBox">
+                            <p><img src="images/rate/icon-rate-12.png" alt="12세"></p>
+                            <p class="movie_title">블랙 팬서: 와칸다 포에버</p>
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnLike">
+                                <span>♡</span>
+                                <span>1.3k</span>
+                            </button>
+                            <div class="bookBtn">
+                                <a href="#void">예매</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="posterImg">
+                            <img src="images/poster1.jpg" alt="블랙팬서">
+                            <p class="rank">1</p>
+                            <div class="movie_info">
+                                <a href="#void">
+                                    <div class="infoText">
+                                        <p>“와칸다를 지켜라!”</p>
+                                        <p>거대한 두 세계의 충돌, 운명을 건 최후의 전투가 시작된다!
+                                        국왕이자 ‘블랙 팬서’인 '티찰라'의 죽음 이후
+                                        수많은 강대국으로부터 위협을 받게 된 '와칸다'.
+                                        '라몬다', '슈리' 그리고 '나키아', '오코예, '음바쿠'는
+                                        각자 사명감을 갖고 '와칸다'를 지키기 위해 외로운 싸움을 이어간다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="titBox">
+                            <p><img src="images/rate/icon-rate-12.png" alt="12세"></p>
+                            <p class="movie_title">블랙 팬서: 와칸다 포에버</p>
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnLike">
+                                <span>♡</span>
+                                <span>1.3k</span>
+                            </button>
+                            <div class="bookBtn">
+                                <a href="#void">예매</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="posterImg">
+                            <img src="images/poster1.jpg" alt="블랙팬서">
+                            <p class="rank">1</p>
+                            <div class="movie_info">
+                                <a href="#void">
+                                    <div class="infoText">
+                                        <p>“와칸다를 지켜라!”</p>
+                                        <p>거대한 두 세계의 충돌, 운명을 건 최후의 전투가 시작된다!
+                                        국왕이자 ‘블랙 팬서’인 '티찰라'의 죽음 이후
+                                        수많은 강대국으로부터 위협을 받게 된 '와칸다'.
+                                        '라몬다', '슈리' 그리고 '나키아', '오코예, '음바쿠'는
+                                        각자 사명감을 갖고 '와칸다'를 지키기 위해 외로운 싸움을 이어간다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="titBox">
+                            <p><img src="images/rate/icon-rate-12.png" alt="12세"></p>
+                            <p class="movie_title">블랙 팬서: 와칸다 포에버</p>
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnLike">
+                                <span>♡</span>
+                                <span>1.3k</span>
+                            </button>
+                            <div class="bookBtn">
+                                <a href="#void">예매</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="posterImg">
+                            <img src="images/poster1.jpg" alt="블랙팬서">
+                            <p class="rank">1</p>
+                            <div class="movie_info">
+                                <a href="#void">
+                                    <div class="infoText">
+                                        <p>“와칸다를 지켜라!”</p>
+                                        <p>거대한 두 세계의 충돌, 운명을 건 최후의 전투가 시작된다!
+                                        국왕이자 ‘블랙 팬서’인 '티찰라'의 죽음 이후
+                                        수많은 강대국으로부터 위협을 받게 된 '와칸다'.
+                                        '라몬다', '슈리' 그리고 '나키아', '오코예, '음바쿠'는
+                                        각자 사명감을 갖고 '와칸다'를 지키기 위해 외로운 싸움을 이어간다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="titBox">
+                            <p><img src="images/rate/icon-rate-12.png" alt="12세"></p>
+                            <p class="movie_title">블랙 팬서: 와칸다 포에버</p>
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnLike">
+                                <span>♡</span>
+                                <span>1.3k</span>
+                            </button>
+                            <div class="bookBtn">
+                                <a href="#void">예매</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="posterImg">
+                            <img src="images/poster1.jpg" alt="블랙팬서">
+                            <p class="rank">1</p>
+                            <div class="movie_info">
+                                <a href="#void">
+                                    <div class="infoText">
+                                        <p>“와칸다를 지켜라!”</p>
+                                        <p>거대한 두 세계의 충돌, 운명을 건 최후의 전투가 시작된다!
+                                        국왕이자 ‘블랙 팬서’인 '티찰라'의 죽음 이후
+                                        수많은 강대국으로부터 위협을 받게 된 '와칸다'.
+                                        '라몬다', '슈리' 그리고 '나키아', '오코예, '음바쿠'는
+                                        각자 사명감을 갖고 '와칸다'를 지키기 위해 외로운 싸움을 이어간다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="titBox">
+                            <p><img src="images/rate/icon-rate-12.png" alt="12세"></p>
+                            <p class="movie_title">블랙 팬서: 와칸다 포에버</p>
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnLike">
+                                <span>♡</span>
+                                <span>1.3k</span>
+                            </button>
+                            <div class="bookBtn">
+                                <a href="#void">예매</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="posterImg">
+                            <img src="images/poster1.jpg" alt="블랙팬서">
+                            <p class="rank">1</p>
+                            <div class="movie_info">
+                                <a href="#void">
+                                    <div class="infoText">
+                                        <p>“와칸다를 지켜라!”</p>
+                                        <p>거대한 두 세계의 충돌, 운명을 건 최후의 전투가 시작된다!
+                                        국왕이자 ‘블랙 팬서’인 '티찰라'의 죽음 이후
+                                        수많은 강대국으로부터 위협을 받게 된 '와칸다'.
+                                        '라몬다', '슈리' 그리고 '나키아', '오코예, '음바쿠'는
+                                        각자 사명감을 갖고 '와칸다'를 지키기 위해 외로운 싸움을 이어간다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="titBox">
+                            <p><img src="images/rate/icon-rate-12.png" alt="12세"></p>
+                            <p class="movie_title">블랙 팬서: 와칸다 포에버</p>
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnLike">
+                                <span>♡</span>
+                                <span>1.3k</span>
+                            </button>
+                            <div class="bookBtn">
+                                <a href="#void">예매</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="posterImg">
+                            <img src="images/poster1.jpg" alt="블랙팬서">
+                            <p class="rank">1</p>
+                            <div class="movie_info">
+                                <a href="#void">
+                                    <div class="infoText">
+                                        <p>“와칸다를 지켜라!”</p>
+                                        <p>거대한 두 세계의 충돌, 운명을 건 최후의 전투가 시작된다!
+                                        국왕이자 ‘블랙 팬서’인 '티찰라'의 죽음 이후
+                                        수많은 강대국으로부터 위협을 받게 된 '와칸다'.
+                                        '라몬다', '슈리' 그리고 '나키아', '오코예, '음바쿠'는
+                                        각자 사명감을 갖고 '와칸다'를 지키기 위해 외로운 싸움을 이어간다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="titBox">
+                            <p><img src="images/rate/icon-rate-12.png" alt="12세"></p>
+                            <p class="movie_title">블랙 팬서: 와칸다 포에버</p>
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnLike">
+                                <span>♡</span>
+                                <span>1.3k</span>
+                            </button>
+                            <div class="bookBtn">
+                                <a href="#void">예매</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="posterImg">
+                            <img src="images/poster1.jpg" alt="블랙팬서">
+                            <p class="rank">1</p>
+                            <div class="movie_info">
+                                <a href="#void">
+                                    <div class="infoText">
+                                        <p>“와칸다를 지켜라!”</p>
+                                        <p>거대한 두 세계의 충돌, 운명을 건 최후의 전투가 시작된다!
+                                        국왕이자 ‘블랙 팬서’인 '티찰라'의 죽음 이후
+                                        수많은 강대국으로부터 위협을 받게 된 '와칸다'.
+                                        '라몬다', '슈리' 그리고 '나키아', '오코예, '음바쿠'는
+                                        각자 사명감을 갖고 '와칸다'를 지키기 위해 외로운 싸움을 이어간다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="titBox">
+                            <p><img src="images/rate/icon-rate-12.png" alt="12세"></p>
+                            <p class="movie_title">블랙 팬서: 와칸다 포에버</p>
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnLike">
+                                <span>♡</span>
+                                <span>1.3k</span>
+                            </button>
+                            <div class="bookBtn">
+                                <a href="#void">예매</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="posterImg">
+                            <img src="images/poster1.jpg" alt="블랙팬서">
+                            <p class="rank">1</p>
+                            <div class="movie_info">
+                                <a href="#void">
+                                    <div class="infoText">
+                                        <p>“와칸다를 지켜라!”</p>
+                                        <p>거대한 두 세계의 충돌, 운명을 건 최후의 전투가 시작된다!
+                                        국왕이자 ‘블랙 팬서’인 '티찰라'의 죽음 이후
+                                        수많은 강대국으로부터 위협을 받게 된 '와칸다'.
+                                        '라몬다', '슈리' 그리고 '나키아', '오코예, '음바쿠'는
+                                        각자 사명감을 갖고 '와칸다'를 지키기 위해 외로운 싸움을 이어간다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="titBox">
+                            <p><img src="images/rate/icon-rate-12.png" alt="12세"></p>
+                            <p class="movie_title">블랙 팬서: 와칸다 포에버</p>
+                        </div>
+                        <div class="btnBox">
+                            <button type="button" class="btnLike">
+                                <span>♡</span>
+                                <span>1.3k</span>
+                            </button>
+                            <div class="bookBtn">
+                                <a href="#void">예매</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- #footer -->
+    <footer id="footer"></footer>
+</body>
+</html>
