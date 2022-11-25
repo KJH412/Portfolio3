@@ -1,0 +1,40 @@
+@import url(../css/common.css);
+.rank {
+  color: white;
+  font-size: 3.5em;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  text-shadow: 0 0 5px #000;
+}
+
+.movie_info {
+  display: none;
+}
+
+#container {
+  position: relative;
+}
+#container .contents {
+  position: relative;
+  top: 100px;
+}
+#container .contents .pageTit {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+#container .contents .topList .topMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+#container .contents .topList .topMenu li {
+  width: 33%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #666;
+}
+#container .contents .topList .topMenu li > a {
+  font-size: 18px;
+}

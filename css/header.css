@@ -220,7 +220,7 @@ header .headerBox .headerBottom nav #nav > li > a {
 header .headerBox .headerBottom nav #nav > li > .sub {
   width: 100%;
   height: 200px;
-  background-color: white;
+  background-color: #efefef;
   position: absolute;
   top: 32px;
   left: 0;
@@ -264,12 +264,12 @@ header .headerBox .headerBottom .searchForm > form input {
 }
 header .headerBox .headerBottom .searchForm > form button {
   border: none;
+  background: transparent;
   position: absolute;
-  right: 10px;
+  right: 25px;
   bottom: 50%;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
-  background: url(../images/clock.svg) no-repeat;
   width: 20px;
   height: 20px;
 }
