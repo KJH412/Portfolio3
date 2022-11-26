@@ -56,10 +56,6 @@ $(function () {
         }
     })
 
-
-  
-
-
     //-------------스크롤 시 헤더 변경
     //스크롤 이벤트
     $(window).scroll(function () {
@@ -67,13 +63,14 @@ $(function () {
 
         if (winWidth > 1000) {
             if (scroll > 300) {
+                $("header").css("position", "fixed");
                 $(".headerTop").css("display", "none");
                 $(".headerBottom").css("margin-top", "10px");
             }
             else if (scroll == 0) {
+                $("header").css("position", "relative");
                 $(".headerTop").css("display", "block");
                 $(".headerBottom").css("margin-top", "70px");
-
             } else {
                 return;
             }
@@ -110,8 +107,8 @@ $(function () {
 
 
     //-------------박스오피스 포스터 슬라이드
-    //pc-보여지는 li는 5개로 설정 ,다음버튼클릭하면 li5개의 너비가 왼쪽으로 움직임.
-    //**css수정함 => li에 left가 아닌 ul의 부모에 overflow:hidden, ul에서 위치 조정.
+    //pc-보여지는 li는 5개로 설정 ,다음버튼클릭하면 li 5개의 너비가 왼쪽으로 움직임.
+    //**css수정 => li에 left가 아닌 ul의 부모에 overflow:hidden, ul에서 위치 조정.
 
     let postBanner = $('.posterWrap'); //ul
     let posterLi = $('.posterWrap>li'); //li
@@ -125,8 +122,7 @@ $(function () {
     let liWidth = posterLi.outerWidth(); //li 너비 (padding이 포함된 값.)
     console.log(liWidth);
 
-    //padding이나 border가 포함되어있으면 outer,innerWidth로 계산해야함 ****
-    //처음에 ul에 gap으로 간격조절했는데 계산하기 쉽게 li에 padding으로 바꿈.    
+    //padding이나 border가 포함되어있으면 outer,innerWidth로 계산해야함 ***   
 
     $('.next').on("click", function () {
         // console.log("다음");
@@ -134,7 +130,6 @@ $(function () {
         
         if (num < maxNum-1) {
             num++;
-            //둘다 동작 됨.
             //pc 0 -50%
             //mobile -100% -200% -300%
             // postBanner.stop().animate({"left": -liWidth*num*5+ "px"}); -li너비*num(0>1로 증가)*5(5개만큼)+px
@@ -154,7 +149,7 @@ $(function () {
     //리사이즈
     //-------------리사이즈-------------
     function resizeInit() {
-        //
+        
         winWidth = $(window).width();
         //헤더
         $(".headerTop").css("display", "block");
@@ -168,11 +163,9 @@ $(function () {
         num = 0;
         if (winWidth > 767) {
             maxNum = 2;      
-            // liWidth= winWidth/;
         }
         else {
             maxNum = 5;
-            // liWidth= winWidth/;
         }
         postBanner.width(maxNum*100+"%");
 
@@ -186,24 +179,6 @@ $(function () {
     $(window).on("resize", function () {
         resizeInit();
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     //-------------스낵리스트 페이드인아웃
     let snack = $('.snackList>li');
@@ -234,14 +209,14 @@ $(function () {
 
 
 
-    //-------------글씨 투명도 0 -> 1 (수정중)
-    //스크롤이벤트! 감지 텍스트 패럴렉스  //위치값체크해서 500이하면 나타나게?
-    // const element = document.querySelector('.mainTitle');
-    // const scrollTarget = window;
-    // const animationName = 'fadeIn';
-    // const start = 0;
+    //박스오피스(boxOffice)서브페이지   
+    let topMenuLi = $('.topMenu>li');
+    let topMuneA = $('.topMenu>li>a')
 
+    topMenuLi.on("click",function(){
+        let idx = $(this).index();
+        
+        topMenuLi.eq(idx).addClass("thisOn").siblings().removeClass("thisOn");  
 
-
-
+    });
 });
