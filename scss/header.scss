@@ -21,8 +21,8 @@ $Mobile480:480px;
         @content;
     }
 } 
-*{
-    // font-size: 12px;
+body{
+    font-size: 12px;
     font-family: 'Noto Sans KR', sans-serif;
 }
 .innerBox{
@@ -31,6 +31,7 @@ $Mobile480:480px;
     margin: 0 auto;
     position: relative;
 }
+
 
 //모바일 햄버거버튼
 .hamBtn{
