@@ -7,34 +7,156 @@
   text-shadow: 0 0 5px #000;
 }
 
-.movie_info {
-  display: none;
-}
-
 #container {
   position: relative;
 }
 #container .contents {
   position: relative;
-  top: 100px;
 }
-#container .contents .pageTit {
+#container .contents .innerBox {
+  position: relative;
+  top: 70px;
+}
+#container .contents .innerBox .pageTit {
   font-size: 30px;
   padding-bottom: 30px;
 }
-#container .contents .topList .topMenu {
+#container .contents .innerBox .topList .topMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-#container .contents .topList .topMenu li {
-  width: 33%;
+#container .contents .innerBox .topList .topMenu li {
+  cursor: pointer;
+  width: 33.3%;
   height: 50px;
   text-align: center;
   line-height: 50px;
-  border: 1px solid #666;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #E60012;
 }
-#container .contents .topList .topMenu li > a {
+#container .contents .innerBox .topList .topMenu li.thisOn {
+  border: 1px solid #E60012;
+  border-bottom: 1px solid #fff;
+}
+#container .contents .innerBox .topList .topMenu li > a {
   font-size: 18px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 66px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 50px 0 200px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li {
+  position: relative;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap {
+  position: relative;
+  width: 250px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .posterImg {
+  position: relative;
+  width: 100%;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .posterImg img {
+  width: 100%;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .rank {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap:hover .movie_info {
+  opacity: 1;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .movie_info {
+  opacity: 0;
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .movie_info > a {
+  position: absolute;
+  padding: 20px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .movie_info > a .infoText p {
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 5px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox > p:nth-child(1) {
+  width: 30px;
+  height: 30px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox > p:nth-child(1) img {
+  width: 100%;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox > .movie_title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-indent: 10px;
+  line-height: 30px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .btnLike {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: transparent;
+  width: 70px;
+  height: 40px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .btnLike:hover {
+  background: #ddd;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .btnLike span {
+  color: #666;
+  font-size: 1.2em;
+  line-height: 40px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .bookBtn {
+  border-radius: 5px;
+  width: 170px;
+  height: 40px;
+  cursor: pointer;
+  background: #AB2121;
+  text-align: center;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .bookBtn:hover {
+  background: #731616;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .bookBtn > a {
+  font-weight: bold;
+  line-height: 40px;
+  color: white;
 }
