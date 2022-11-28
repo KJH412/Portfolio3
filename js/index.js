@@ -56,8 +56,8 @@ $(function () {
         }
     })
 
-    //-------------스크롤 시 헤더 변경
-    //스크롤 이벤트
+    //-------------스크롤 이벤트
+    //헤더
     $(window).scroll(function () {
         let scroll = $(window).scrollTop();
 
@@ -122,7 +122,7 @@ $(function () {
     let liWidth = posterLi.outerWidth(); //li 너비 (padding이 포함된 값.)
     console.log(liWidth);
 
-    //padding이나 border가 포함되어있으면 outer,innerWidth로 계산해야함 ***   
+    //padding, border가 포함되어있으면 outer,innerWidth로 계산해야함 ***   
 
     $('.next').on("click", function () {
         // console.log("다음");
@@ -146,7 +146,7 @@ $(function () {
         }
     });
 
-    //리사이즈
+    
     //-------------리사이즈-------------
     function resizeInit() {
         
@@ -212,11 +212,14 @@ $(function () {
     //박스오피스(boxOffice)서브페이지   
     let topMenuLi = $('.topMenu>li');
     let topMuneA = $('.topMenu>li>a')
+    let movieWrap = $('.movieList_boxOffice'); //div
+    let movieList = $('.movieList_boxOffice>ul') 
 
     topMenuLi.on("click",function(){
         let idx = $(this).index();
         
         topMenuLi.eq(idx).addClass("thisOn").siblings().removeClass("thisOn");  
-
+        movieList.eq(idx).removeClass("hide").siblings().addClass("hide");
     });
+
 });
