@@ -43,42 +43,52 @@
 #container .contents .innerBox .topList .topMenu li > a {
   font-size: 18px;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice {
+#container .contents .innerBox .movieList_boxOffice .boxOffice, #container .contents .innerBox .movieList_boxOffice .newOpen, #container .contents .innerBox .movieList_boxOffice .notOpen {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 66px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
   margin: 50px 0 200px;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li {
-  position: relative;
+@media screen and (max-width: 1279px) {
+  #container .contents .innerBox .movieList_boxOffice .boxOffice, #container .contents .innerBox .movieList_boxOffice .newOpen, #container .contents .innerBox .movieList_boxOffice .notOpen {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap {
+#container .contents .innerBox .movieList_boxOffice .boxOffice.hide, #container .contents .innerBox .movieList_boxOffice .newOpen.hide, #container .contents .innerBox .movieList_boxOffice .notOpen.hide {
+  display: none;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li, #container .contents .innerBox .movieList_boxOffice .newOpen > li, #container .contents .innerBox .movieList_boxOffice .notOpen > li {
+  position: relative;
+  padding: 20px 25px;
+}
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap, #container .contents .innerBox .movieList_boxOffice .newOpen > li .movieWrap, #container .contents .innerBox .movieList_boxOffice .notOpen > li .movieWrap {
   position: relative;
   width: 250px;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .posterImg {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .posterImg, #container .contents .innerBox .movieList_boxOffice .newOpen > li .movieWrap .posterImg, #container .contents .innerBox .movieList_boxOffice .notOpen > li .movieWrap .posterImg {
   position: relative;
   width: 100%;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .posterImg img {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .posterImg img, #container .contents .innerBox .movieList_boxOffice .newOpen > li .movieWrap .posterImg img, #container .contents .innerBox .movieList_boxOffice .notOpen > li .movieWrap .posterImg img {
   width: 100%;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .rank {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .rank, #container .contents .innerBox .movieList_boxOffice .newOpen > li .movieWrap .rank, #container .contents .innerBox .movieList_boxOffice .notOpen > li .movieWrap .rank {
   position: absolute;
   top: 0;
   left: 20px;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap:hover .movie_info {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap:hover .movie_info, #container .contents .innerBox .movieList_boxOffice .newOpen > li .movieWrap:hover .movie_info, #container .contents .innerBox .movieList_boxOffice .notOpen > li .movieWrap:hover .movie_info {
   opacity: 1;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .movie_info {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .movie_info, #container .contents .innerBox .movieList_boxOffice .newOpen > li .movieWrap .movie_info, #container .contents .innerBox .movieList_boxOffice .notOpen > li .movieWrap .movie_info {
   opacity: 0;
   width: 250px;
   height: 100%;
@@ -89,16 +99,16 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .movie_info > a {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .movie_info > a, #container .contents .innerBox .movieList_boxOffice .newOpen > li .movieWrap .movie_info > a, #container .contents .innerBox .movieList_boxOffice .notOpen > li .movieWrap .movie_info > a {
   position: absolute;
   padding: 20px;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .movie_info > a .infoText p {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .movie_info > a .infoText p, #container .contents .innerBox .movieList_boxOffice .newOpen > li .movieWrap .movie_info > a .infoText p, #container .contents .innerBox .movieList_boxOffice .notOpen > li .movieWrap .movie_info > a .infoText p {
   color: #fff;
   font-size: 1.2em;
   line-height: 1.5;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox, #container .contents .innerBox .movieList_boxOffice .newOpen > li .titBox, #container .contents .innerBox .movieList_boxOffice .notOpen > li .titBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,20 +117,24 @@
           justify-content: flex-start;
   padding-top: 5px;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox > p:nth-child(1) {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox > p:nth-child(1), #container .contents .innerBox .movieList_boxOffice .newOpen > li .titBox > p:nth-child(1), #container .contents .innerBox .movieList_boxOffice .notOpen > li .titBox > p:nth-child(1) {
   width: 30px;
   height: 30px;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox > p:nth-child(1) img {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox > p:nth-child(1) img, #container .contents .innerBox .movieList_boxOffice .newOpen > li .titBox > p:nth-child(1) img, #container .contents .innerBox .movieList_boxOffice .notOpen > li .titBox > p:nth-child(1) img {
   width: 100%;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox > .movie_title {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .titBox > .movie_title, #container .contents .innerBox .movieList_boxOffice .newOpen > li .titBox > .movie_title, #container .contents .innerBox .movieList_boxOffice .notOpen > li .titBox > .movie_title {
   font-size: 1.5em;
   font-weight: bold;
   text-indent: 10px;
   line-height: 30px;
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox, #container .contents .innerBox .movieList_boxOffice .newOpen > li .btnBox, #container .contents .innerBox .movieList_boxOffice .notOpen > li .btnBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,22 +143,22 @@
           justify-content: space-between;
   padding-top: 10px;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .btnLike {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .btnLike, #container .contents .innerBox .movieList_boxOffice .newOpen > li .btnBox .btnLike, #container .contents .innerBox .movieList_boxOffice .notOpen > li .btnBox .btnLike {
   border: 1px solid #ccc;
   border-radius: 10px;
   background: transparent;
   width: 70px;
   height: 40px;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .btnLike:hover {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .btnLike:hover, #container .contents .innerBox .movieList_boxOffice .newOpen > li .btnBox .btnLike:hover, #container .contents .innerBox .movieList_boxOffice .notOpen > li .btnBox .btnLike:hover {
   background: #ddd;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .btnLike span {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .btnLike span, #container .contents .innerBox .movieList_boxOffice .newOpen > li .btnBox .btnLike span, #container .contents .innerBox .movieList_boxOffice .notOpen > li .btnBox .btnLike span {
   color: #666;
   font-size: 1.2em;
   line-height: 40px;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .bookBtn {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .bookBtn, #container .contents .innerBox .movieList_boxOffice .newOpen > li .btnBox .bookBtn, #container .contents .innerBox .movieList_boxOffice .notOpen > li .btnBox .bookBtn {
   border-radius: 5px;
   width: 170px;
   height: 40px;
@@ -152,10 +166,10 @@
   background: #AB2121;
   text-align: center;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .bookBtn:hover {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .bookBtn:hover, #container .contents .innerBox .movieList_boxOffice .newOpen > li .btnBox .bookBtn:hover, #container .contents .innerBox .movieList_boxOffice .notOpen > li .btnBox .bookBtn:hover {
   background: #731616;
 }
-#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .bookBtn > a {
+#container .contents .innerBox .movieList_boxOffice .boxOffice > li .btnBox .bookBtn > a, #container .contents .innerBox .movieList_boxOffice .newOpen > li .btnBox .bookBtn > a, #container .contents .innerBox .movieList_boxOffice .notOpen > li .btnBox .bookBtn > a {
   font-weight: bold;
   line-height: 40px;
   color: white;
