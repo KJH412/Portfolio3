@@ -9,7 +9,7 @@ $hovColor:#C39C71; //호버
     right: $right;
     bottom: $bottom;
     left: $left;
-} //사용할때 @include myPos(){}
+} 
 
 //반응형
 $Mobile1279:1279px;
@@ -247,6 +247,7 @@ header{
                             top: 32px;
                             left: 0;
                             text-align: center;
+
                             @include respond($Mobile1000){
                                 background-color: transparent;
                                 position: relative;
@@ -258,7 +259,9 @@ header{
                             
                                 a{
                                     font-size: 1.2em;   
-                                    line-height: 2;    
+                                    line-height: 35px;   
+                                    font-weight: bold;
+                                    
                                     @include respond($Mobile1000){
                                         line-height: 1;
                                     }

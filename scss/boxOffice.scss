@@ -64,16 +64,25 @@ $Mobile480:480px;
             }
             .movieList_boxOffice{
                 // overflow: hidden;
-
-                .boxOffice{
+                
+                .boxOffice,.newOpen,.notOpen{  //ul
+                    position: relative;
                     display: flex;
                     justify-content: flex-start;
-                    gap: 66px;
                     flex-wrap: wrap;
                     width: 100%;
                     margin: 50px 0 200px;
+
+                    @include respond($Mobile1279){
+                        justify-content: space-around;        
+                    }
+
+                    &.hide{
+                        display: none;
+                    }
                     >li{    
-                        position: relative;                                
+                        position: relative;  
+                        padding: 20px 25px;                           
 
                         .movieWrap{
                             position: relative;
@@ -124,7 +133,7 @@ $Mobile480:480px;
                             display: flex;
                             justify-content: flex-start;
                             padding-top: 5px;    
-
+                            
                             >p:nth-child(1){
                                 width: 30px;
                                 height: 30px;
@@ -136,7 +145,12 @@ $Mobile480:480px;
                                 font-size: 1.5em;
                                 font-weight: bold;
                                 text-indent: 10px;
-                                line-height: 30px;      
+                                line-height: 30px;   
+                                //
+                                width: 220px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;   
                             }
                         }
                         .btnBox{
