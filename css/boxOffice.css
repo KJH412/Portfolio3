@@ -21,6 +21,11 @@
   font-size: 30px;
   padding-bottom: 30px;
 }
+@media screen and (max-width: 1279px) {
+  #container .contents .innerBox .pageTit {
+    padding-left: 20px;
+  }
+}
 #container .contents .innerBox .topList .topMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,9 +74,19 @@
   position: relative;
   padding: 20px 25px;
 }
+@media screen and (max-width: 480px) {
+  #container .contents .innerBox .movieList_boxOffice .boxOffice > li, #container .contents .innerBox .movieList_boxOffice .newOpen > li, #container .contents .innerBox .movieList_boxOffice .notOpen > li {
+    padding: 0;
+  }
+}
 #container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap, #container .contents .innerBox .movieList_boxOffice .newOpen > li .movieWrap, #container .contents .innerBox .movieList_boxOffice .notOpen > li .movieWrap {
   position: relative;
   width: 250px;
+}
+@media screen and (max-width: 480px) {
+  #container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap, #container .contents .innerBox .movieList_boxOffice .newOpen > li .movieWrap, #container .contents .innerBox .movieList_boxOffice .notOpen > li .movieWrap {
+    width: 300px;
+  }
 }
 #container .contents .innerBox .movieList_boxOffice .boxOffice > li .movieWrap .posterImg, #container .contents .innerBox .movieList_boxOffice .newOpen > li .movieWrap .posterImg, #container .contents .innerBox .movieList_boxOffice .notOpen > li .movieWrap .posterImg {
   position: relative;
