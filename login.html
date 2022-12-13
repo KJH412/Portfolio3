@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo3.png">
+    <title>씨네Q</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!--스크립트 연결 -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- #header -->
+    <header id="header"></header>
+    <!-- #container -->
+    <div id="container">
+        <div class="loginWrap">
+            <div class="popupColse">
+                <img src="images/logo1.png" alt="로고">
+            </div>
+            <div class="memberSelect clearFix">
+                <span class="member"><a href="#void" class="tab">회원</a></span>
+                <span class="nomember"><a href="#void">비회원</a></span>
+            </div>
+            <ul class="loginTab">
+                <li class="memberLoginWrap onThis">
+                    <div class="loginContents">
+                        <div class="meminputBox">
+                            <span>아이디와 비밀번호를 입력한 후, 로그인을 눌러주세요.</span>
+                            <label for="memberId">
+                                <span>아이디(이메일)</span>
+                                <input type="text" id="memberId" placeholder="이메일을 입력하세요">
+                            </label>
+                            <label for="memberPw">
+                                <span>비밀번호</span>
+                                <input type="text" id="memberId" placeholder="영문, 숫자 포함 8자 이상">
+                            </label>
+                        </div>
+                        <p>
+                            <span>
+                                <input type="checkBox" id="memberId_save">
+                                <label for="memberId_save">아이디 저장</label>
+                            </span>
+                            <span>
+                                <a href="#void" class="findId">아이디찾기</a>
+                                <a href="#void" class="findPw">비밀번호찾기</a>
+                            </span>
+                        </p>
+                        <div class="loginBtnBox clearFix">
+                            <a href="#void" class="btnLogin">로그인</a>
+                            <a href="#void" class="btnJoin">회원가입</a>
+                        </div>
+                        <p class="soc">소셜 계정으로 간편 로그인 <a href="#void">소셜 계정 다시 연결</a></p>
+                        <div class="loginBtnBox_social">
+                            <a href="#void" class="naverLogin">네이버</a>
+                            <a href="#void" class="kakaoLogin">카카오</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nomemberLoginWrap">
+                    <div class="loginContents clearFix">
+                        <div class="nomemberLeft">
+                            <ul class="desc">
+                                <li>비회원 예매는 할인 수단 적용이 불가하며, 신용카드 결제만 가능합니다.</li>
+                                <li>모든항목은 필수 입니다.</li>
+                                <li>문의사항은 고객센터(1544-1533)로 문의해 주시기 바랍니다.</li>
+                                <li>비회원예매내역 서비스는 비회원 예매시 입력했던<br> 개인정보를 동일하게 입력하셔야 이용 가능합니다.</li>
+                            </ul>
+                        </div>     
+                        <div class="nomemberRight">
+                            <div>
+                                <label for="nomemberId">
+                                    <span>이름</span>
+                                    <input type="text" id="nomemberId" placeholder="본명을 입력해주세요">
+                                </label>
+                            </div>
+                            <div>
+                                <label for="nomemberEmail">
+                                    <span>이메일</span>
+                                    <input type="text" id="nomemberId" placeholder="이메일을 입력해주세요">
+                                </label>
+                            </div>
+                            <div>                        
+                                <label for="nomemberPhone">
+                                    <span>휴대폰번호</span>
+                                    <input type="text" id="memberId" placeholder="휴대폰번호을 입력해주세요">
+                                </label>
+                            </div>
+                            <div>                        
+                                <label for="nomemberPw">
+                                    <span>비밀번호(4자리)</span>
+                                    <input type="text" id="memberId" placeholder="4자리 숫자를 입력해주세요">
+                                </label>
+                            </div>
+                        </div>                                    
+                    </div>               
+                    <div class="loginBtnBox_nomember">
+                        <a href="#void">로그인</a>
+                    </div> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- #footer -->
+<footer id="footer"></footer>
+</body>
+</html>
