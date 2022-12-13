@@ -127,12 +127,11 @@ header .headerBox .headerTop .gnbWrap .rightGnb {
   }
 }
 header .headerBox .headerTop .gnbWrap .rightGnb > li {
-  width: 30px;
-  height: 30px;
   float: left;
-  padding: 0 10px;
+  margin: 0 10px;
+  text-align: center;
 }
-header .headerBox .headerTop .gnbWrap .rightGnb > li:hover img {
+header .headerBox .headerTop .gnbWrap .rightGnb > li a:hover img {
   -webkit-animation-name: rotation;
           animation-name: rotation;
   -webkit-animation-duration: 0.5s;
@@ -158,11 +157,16 @@ header .headerBox .headerTop .gnbWrap .rightGnb > li:hover img {
             transform: rotate3d(1, 1, 1, 360deg);
   }
 }
-header .headerBox .headerTop .gnbWrap .rightGnb > li img {
+header .headerBox .headerTop .gnbWrap .rightGnb > li a > div {
+  width: 30px;
+  height: 30px;
+}
+header .headerBox .headerTop .gnbWrap .rightGnb > li a > div img {
   width: 100%;
 }
-header .headerBox .headerTop .gnbWrap .rightGnb > li span {
+header .headerBox .headerTop .gnbWrap .rightGnb > li a span {
   word-break: keep-all;
+  font-weight: bold;
 }
 header .headerBox .headerBottom {
   display: -webkit-box;

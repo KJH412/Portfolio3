@@ -114,6 +114,9 @@
     font-size: 2.5em;
   }
 }
+#container .sec_1 .mainTitleBox .mainTitle.boxOfficeTit {
+  cursor: pointer;
+}
 #container .sec_1 .mainTitleBox .subTitle {
   clear: both;
 }
@@ -144,6 +147,7 @@
   line-height: 40px;
   border-radius: 10px;
   border: 1px solid #ccc;
+  cursor: pointer;
 }
 #container .sec_1 .mainTitleBox .lookBtn:hover {
   -webkit-filter: drop-shadow(0 0 3px #666);
@@ -306,6 +310,7 @@
   line-height: 40px;
   border-radius: 10px;
   border: 1px solid #ccc;
+  cursor: pointer;
 }
 #container .sec_2 .lookBtn:hover {
   -webkit-filter: drop-shadow(0 0 3px #666);
@@ -410,6 +415,7 @@
   line-height: 40px;
   border-radius: 10px;
   border: 1px solid #ccc;
+  cursor: pointer;
 }
 #container .sec_3 .lookBtn:hover {
   -webkit-filter: drop-shadow(0 0 3px #666);
@@ -524,6 +530,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   padding: 20px;
+  margin-right: 5px;
 }
 @media screen and (max-width: 480px) {
   #container .sec_4 .notice {
@@ -601,6 +608,11 @@
   font-size: 22px;
   padding: 20px 0;
 }
+@media screen and (max-width: 480px) {
+  #container .sec_4 .customerCenter .centerTextBox > h2 {
+    padding: 0 0 10px;
+  }
+}
 #container .sec_4 .customerCenter .centerTextBox > strong {
   font-size: 2em;
 }
@@ -642,6 +654,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
+  margin-left: 5px;
 }
 @media screen and (max-width: 1000px) {
   #container .sec_4 .snack {

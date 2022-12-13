@@ -1,0 +1,216 @@
+@import url(../css/common.css);
+#container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#container .loginWrap {
+  width: 600px;
+  height: 500px;
+  background: #fff;
+  -webkit-filter: drop-shadow(1px 1px 5px #666);
+          filter: drop-shadow(1px 1px 5px #666);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+#container .loginWrap .popupColse {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 0;
+}
+#container .loginWrap .popupColse > img {
+  height: 100%;
+}
+#container .loginWrap .memberSelect {
+  display: block;
+  width: 100%;
+}
+#container .loginWrap .memberSelect > span {
+  background-color: #ccc;
+  display: inline-block;
+  width: 50%;
+  height: 45px;
+  float: left;
+  color: #666;
+}
+#container .loginWrap .memberSelect > span a {
+  display: block;
+  text-align: center;
+  line-height: 45px;
+  font-size: 16px;
+}
+#container .loginWrap .memberSelect > span a.tab {
+  background: #E60012;
+  color: #fff;
+}
+#container .loginWrap .loginTab {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+#container .loginWrap .loginTab > li {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  line-height: 2;
+  display: none;
+}
+#container .loginWrap .loginTab > li.onThis {
+  display: block;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox {
+  width: 350px;
+  margin: 0 auto;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > span {
+  display: block;
+  padding: 30px 0;
+  font-size: 1em;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ccc;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 5px 5px 15px;
+  margin: 5px 0;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > label span {
+  font-weight: bold;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > label input {
+  width: 220px;
+  outline: none;
+  border: none;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents > p {
+  width: 100%;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents > p span {
+  padding: 0 65px;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox {
+  width: 350px;
+  height: 40px;
+  margin: 20px auto;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox a {
+  display: inline-block;
+  height: 100%;
+  line-height: 40px;
+  float: left;
+  color: #fff;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox > .btnLogin {
+  width: 70%;
+  background-color: #b40c1a;
+  margin-right: 10px;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox > .btnLogin:hover {
+  background-color: #8d0b16;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox > .btnJoin {
+  width: 27%;
+  background-color: #666;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .soc {
+  width: 350px;
+  text-align: left;
+  margin: 0 auto;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .soc > a {
+  padding-left: 30px;
+  color: blue;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox_social {
+  width: 350px;
+  height: 40px;
+  margin: 20px auto;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox_social a {
+  display: inline-block;
+  height: 100%;
+  line-height: 40px;
+  font-weight: bold;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox_social .naverLogin {
+  width: 50%;
+  color: #fff;
+  background: green;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox_social .naverLogin:hover {
+  background: darkgreen;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox_social .kakaoLogin {
+  width: 49%;
+  background: gold;
+}
+#container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox_social .kakaoLogin:hover {
+  background: goldenrod;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap {
+  text-align: left;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginContents {
+  width: 600px;
+  margin: 0 auto;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginContents > div {
+  padding: 50px 0 0;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberLeft {
+  float: left;
+  width: 50%;
+  font-size: 0.8em;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberLeft .desc {
+  padding: 10px 30px 0 50px;
+  border-right: 1px solid #ccc;
+  height: 220px;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberLeft .desc li {
+  list-style: circle;
+  line-height: 2;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberRight {
+  float: left;
+  width: 40%;
+  padding-left: 30px;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberRight div > label {
+  width: 200px;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberRight div > label span {
+  display: block;
+  font-weight: bold;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberRight div > label input {
+  border: 1px solid #ccc;
+  height: 30px;
+  width: 90%;
+  text-indent: 10px;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginBtnBox_nomember {
+  text-align: center;
+  background: #b40c1a;
+  width: 350px;
+  height: 40px;
+  margin: 30px auto 0;
+  cursor: pointer;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginBtnBox_nomember:hover {
+  background-color: #8d0b16;
+}
+#container .loginWrap .loginTab .nomemberLoginWrap .loginBtnBox_nomember > a {
+  line-height: 40px;
+  color: #fff;
+}
