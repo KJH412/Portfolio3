@@ -106,7 +106,8 @@ $(function () {
 
 
 
-    //-------------박스오피스 포스터 슬라이드
+    //-------------영화 포스터 슬라이드
+
     //pc-보여지는 li는 5개로 설정 ,다음버튼클릭하면 li 5개의 너비가 왼쪽으로 움직임.
     //**css수정 => li에 left가 아닌 ul의 부모에 overflow:hidden, ul에서 위치 조정.
 
@@ -122,7 +123,7 @@ $(function () {
     let liWidth = posterLi.outerWidth(); //li 너비 (padding이 포함된 값.)
     console.log(liWidth);
 
-    //padding, border가 포함되어있으면 outer,innerWidth로 계산해야함 ***   
+    //padding, border가 포함되어있으면 outer,innerWidth로 계산 ***   
 
     $('.next').on("click", function () {
         // console.log("다음");
@@ -145,6 +146,31 @@ $(function () {
             postBanner.stop().animate({ "left": -100*num+"%"});
         }
     });
+
+    //박스오피스
+    $('.boxOfficeTit').on("click",function(){
+
+        for(i=0; i<moviePosterLi.length; i++ ){
+            $('.poster>img').eq(i).attr("src", "./images/poster"+(i+1)+".jpg");
+        }
+    })    
+    // 최신개봉작
+    let moviePosterLi = $('.posterWrap>li'); //10개
+
+    $('.newOpenTit').on("click",function(){
+
+        for(i=0; i<moviePosterLi.length; i++ ){
+            $('.poster>img').eq(i).attr("src", "./images/poster2"+i+".jpg");
+        }
+    })
+    //상영예정작
+    $('.notOpenTit').on("click",function(){
+
+        for(i=0; i<moviePosterLi.length; i++ ){
+            $('.poster>img').eq(i).attr("src", "./images/poster3"+i+".jpg");
+        }
+    })
+
 
     
     //-------------리사이즈-------------
@@ -211,15 +237,30 @@ $(function () {
 
     //박스오피스(boxOffice)서브페이지   
     let topMenuLi = $('.topMenu>li');
-    let topMuneA = $('.topMenu>li>a')
-    let movieWrap = $('.movieList_boxOffice'); //div
+    // let topMuneA = $('.topMenu>li>a')
+    // let movieWrap = $('.movieList_boxOffice'); //div
     let movieList = $('.movieList_boxOffice>ul') 
 
     topMenuLi.on("click",function(){
         let idx = $(this).index();
-        
+
         topMenuLi.eq(idx).addClass("thisOn").siblings().removeClass("thisOn");  
         movieList.eq(idx).removeClass("hide").siblings().addClass("hide");
     });
+
+
+    //-------------로그인 회원,비회원
+    let memberName = $('.memberSelect>span');
+    let memberSelect = $('.memberSelect>span>a');
+    let memberLi = $('.loginTab>li'); //li
+    let loginContents =  $('.loginContents'); //li>div
+    
+    memberName.on("click",function(){
+        let idx = $(this).index();
+
+        memberLi.eq(idx).addClass('onThis').siblings().removeClass('onThis');     
+          
+    });
+
 
 });
