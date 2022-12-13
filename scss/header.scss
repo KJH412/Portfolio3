@@ -141,8 +141,6 @@ header{
                         }
                     }
                 .rightGnb{
-                    // display: flex;
-                    // float:right;
                     position: absolute;
                     right: 0;
                     gap: 30px;
@@ -153,32 +151,35 @@ header{
                     }
 
                     >li{
-                        width: 30px;
-                        height: 30px;
                         float:left;
-                        padding: 0 10px;
-                            
-                        &:hover img{
-                            animation-name: rotation;
-                            animation-duration: 0.5s;
-                            @keyframes rotation {
-                                0%{
-                                    transform: rotate3d(1,1,1,0deg);
+                        margin: 0 10px; 
+                        text-align: center;                       
+                        a{
+
+                            &:hover img{
+                                animation-name: rotation;
+                                animation-duration: 0.5s;
+                                @keyframes rotation {
+                                    0%{
+                                        transform: rotate3d(1,1,1,0deg);
+                                    }
+                                    100%{
+                                        transform: rotate3d(1,1,1,360deg);
+                                    }
                                 }
-                                50%{
-                                    // transform: rotate3d(1,1,1,0deg);
-                                }
-                                100%{
-                                    transform: rotate3d(1,1,1,360deg);
+                            }   
+                            >div{    
+                                width: 30px;
+                                height: 30px;                 
+                                img{
+                                    width: 100%;                            
                                 }
                             }
-                        }                        
-                        img{
-                            width: 100%;                            
-                        }
-                        span{
-                            word-break: keep-all;
-                            // font-size: 0.7em;
+                            span{
+                                word-break: keep-all;
+                                font-weight: bold;
+                                // font-size: 0.7em;
+                            }
                         }
                     }
                 }
@@ -188,7 +189,6 @@ header{
             display: flex;
             justify-content: space-between;           
             margin-top: 70px;
-            // float: left;
 
             nav{  
                                

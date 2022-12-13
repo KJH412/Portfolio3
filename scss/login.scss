@@ -1,0 +1,241 @@
+@import url(../css/common.css);
+
+$mainColor:#E60012;
+$hovColor:#C39C71;
+
+//반응형
+$Mobile1279:1279px;
+$Mobile1000:1000px;
+$Mobile767:767px;
+$Mobile480:480px;
+@mixin respond($media){
+    @media screen and (max-width:$media) {
+        @content;
+    }
+} 
+
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .loginWrap{
+        width: 600px;
+        height: 500px;
+        background: #fff;
+        filter: drop-shadow(1px 1px 5px #666);
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        
+        .popupColse{
+            display: block;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            cursor: pointer;
+            padding: 5px 0;
+            >img{
+                height: 100%;
+            }
+        }
+        .memberSelect{
+            display: block;
+            width: 100%;
+            >span{
+                background-color: #ccc;
+                display: inline-block;
+                width: 50%;
+                height: 45px;
+                float: left;
+                color: #666;
+                
+                a{
+                    display: block;
+                    text-align: center;
+                    line-height: 45px;
+                    font-size: 16px;
+                    &.tab{
+                        background: $mainColor;
+                        color: #fff;
+                    }
+                }                
+            }
+        }
+        .loginTab{ //ul
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            >li{
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                line-height: 2;
+                display: none;
+
+                &.onThis{
+                    display: block;
+                }
+            }
+            .memberLoginWrap{ //li 회원
+
+                .loginContents{
+
+                    .meminputBox{
+                        width: 350px;
+                        margin: 0 auto;
+                        >span{
+                            display: block;
+                            padding: 30px 0;
+                            font-size: 1em;
+                        }
+                        >label{
+                            display: flex;
+                            border: 1px solid #ccc;
+                            justify-content: space-between;
+                            padding: 5px 5px 5px 15px;
+                            margin: 5px 0;
+                           
+                            span{
+                                font-weight: bold;                             
+                            }
+                            input{
+                                width: 220px;
+                                outline: none;
+                                border: none;
+                            }
+
+                        }
+                        
+                    }
+                    >p{
+                        width: 100%;
+                        span{
+                            padding: 0 65px;;
+                        }
+                    }
+                    .loginBtnBox{
+                        width: 350px;
+                        height: 40px;
+                        margin: 20px auto;
+                        
+                        a{
+                            display: inline-block;
+                            height: 100%;
+                            line-height: 40px;
+                            float: left;
+                            color: #fff;
+                        }
+                        >.btnLogin{
+                            width: 70%;
+                            background-color: #b40c1a;
+                            margin-right: 10px;
+                            &:hover{
+                            background-color: #8d0b16;
+                            }
+                        }
+                        >.btnJoin{
+                            width: 27%;
+                            background-color: #666;
+                        }
+                    }
+                    .soc{
+                        width: 350px;
+                        text-align: left;
+                        margin: 0 auto;
+                        >a{
+                            padding-left: 30px;
+                            color: blue;
+                        }
+                    }
+                    .loginBtnBox_social{
+                        width: 350px;
+                        height: 40px;
+                        margin: 20px auto;                           
+                        a{
+                            display: inline-block;
+                            height: 100%;
+                            line-height: 40px;
+                            font-weight: bold;
+                        }
+                        .naverLogin{
+                            width: 50%;
+                            color: #fff;
+                            background: green;
+                            &:hover{
+                                background: darkgreen;
+                            }
+                        }
+                        .kakaoLogin{
+                            width: 49%;
+                            background: gold;
+                            &:hover{
+                                background: goldenrod;
+                            }
+                        }
+                    }
+                }
+            } 
+            .nomemberLoginWrap{ //li 비회원
+                text-align: left;
+                .loginContents{
+                    width: 600px;
+                    margin: 0 auto;
+                    >div{
+                        padding: 50px 0 0; 
+                    }
+                    .nomemberLeft{
+                        float: left;
+                        width: 50%;
+                        font-size: 0.8em;
+                        .desc{ //ul
+                            padding: 10px 30px 0 50px;
+                            border-right: 1px solid #ccc;
+                            height: 220px;
+                            li{
+                                list-style:circle;
+                                line-height: 2;
+                            }
+                        }
+                    }
+                    .nomemberRight{
+                        float: left;
+                        width: 40%;
+                        padding-left: 30px;                    
+                        div{ //공통
+                            >label{
+                                width: 200px;
+                                span{
+                                    display: block;
+                                    font-weight: bold;
+                                }
+                                input{
+                                    border: 1px solid #ccc;
+                                    height: 30px;
+                                    width: 90%;
+                                    text-indent: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .loginBtnBox_nomember{
+                    text-align: center;
+                    background: #b40c1a;
+                    width: 350px;
+                    height: 40px;
+                    margin: 30px auto 0;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #8d0b16;
+                    }
+                    >a{
+                        line-height: 40px;
+                        color: #fff;
+                    }
+                }
+            }         
+        }       
+    }//loginWrap
+}
