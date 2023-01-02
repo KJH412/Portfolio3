@@ -1,7 +1,7 @@
 @import url(../css/common.css);
 #container {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   position: relative;
 }
 #container .loginWrap {
@@ -16,6 +16,11 @@
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap {
+    width: 100%;
+  }
+}
 #container .loginWrap .popupColse {
   display: block;
   width: 100%;
@@ -27,27 +32,32 @@
 #container .loginWrap .popupColse > img {
   height: 100%;
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap .popupColse {
+    opacity: 0;
+  }
+}
 #container .loginWrap .memberSelect {
   display: block;
   width: 100%;
 }
 #container .loginWrap .memberSelect > span {
-  background-color: #ccc;
+  background: #ccc;
   display: inline-block;
   width: 50%;
   height: 45px;
   float: left;
-  color: #666;
+}
+#container .loginWrap .memberSelect > span.tab {
+  background: #E60012;
 }
 #container .loginWrap .memberSelect > span a {
   display: block;
   text-align: center;
   line-height: 45px;
   font-size: 16px;
-}
-#container .loginWrap .memberSelect > span a.tab {
-  background: #E60012;
   color: #fff;
+  font-weight: bold;
 }
 #container .loginWrap .loginTab {
   position: relative;
@@ -88,15 +98,28 @@
   font-weight: bold;
 }
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > label input {
-  width: 220px;
+  width: 230px;
   outline: none;
   border: none;
+  border-left: 1px solid #ccc;
+  text-indent: 10px;
 }
 #container .loginWrap .loginTab .memberLoginWrap .loginContents > p {
   width: 100%;
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents > p {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
 #container .loginWrap .loginTab .memberLoginWrap .loginContents > p span {
   padding: 0 65px;
+}
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents > p span {
+    padding: 0;
+  }
 }
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox {
   width: 350px;
