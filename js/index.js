@@ -251,15 +251,14 @@ $(function () {
 
     //-------------로그인 회원,비회원
     let memberName = $('.memberSelect>span');
-    let memberSelect = $('.memberSelect>span>a');
     let memberLi = $('.loginTab>li'); //li
-    let loginContents =  $('.loginContents'); //li>div
     
     memberName.on("click",function(){
         let idx = $(this).index();
 
         memberLi.eq(idx).addClass('onThis').siblings().removeClass('onThis');     
-          
+        memberName.eq(idx).addClass('tab').siblings().removeClass('tab');
+       
     });
 
 
