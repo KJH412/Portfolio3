@@ -13,6 +13,7 @@
 - 메인페이지 <a>https://kjh412.github.io/cineQ/<a>
 - 영화메뉴 페이지 <a>https://kjh412.github.io/cineQ/boxOffice.html</a>
 - 로그인 페이지 <a>https://kjh412.github.io/cineQ/login.html</a>
+- 회원가입 <a>https://kjh412.github.io/cineQ/joinForm.html</a>
 - [업데이트 예정] : 상세정보, 영화예매
 
 ### 작업
