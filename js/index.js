@@ -81,7 +81,7 @@ $(function () {
 
     //-------------메인배너 페이드인아웃
     let currentIndex = 0;
-    let slides = $(".bannerWrap>li");
+    const slides = $(".bannerWrap>li");
 
     function fadeBanner() {
         slides.stop().animate({
@@ -108,19 +108,19 @@ $(function () {
 
     //-------------영화 포스터 슬라이드
 
-    //pc-보여지는 li는 5개로 설정 ,다음버튼클릭하면 li 5개의 너비가 왼쪽으로 움직임.
+    //pc-보여지는 li는 5개로 설정, 다음버튼클릭하면 li 5개의 너비가 왼쪽으로 움직임.
     //**css수정 => li에 left가 아닌 ul의 부모에 overflow:hidden, ul에서 위치 조정.
 
-    let postBanner = $('.posterWrap'); //ul
-    let posterLi = $('.posterWrap>li'); //li
-    let liLength = $('.posterWrap>li').length; //1i 개수
+    const postBanner = $('.posterWrap'); //ul
+    const posterLi = $('.posterWrap>li'); //li
+    const liLength = $('.posterWrap>li').length; //1i 개수
 
     let num = 0;
     let maxNum = 2;
 
     //section의 크기(너비)
-    let ulWidth = postBanner.width(); //ul 너비
-    let liWidth = posterLi.outerWidth(); //li 너비 (padding이 포함된 값.)
+    const ulWidth = postBanner.width(); //ul 너비
+    const liWidth = posterLi.outerWidth(); //li 너비 (padding이 포함된 값.)
     console.log(liWidth);
 
     //padding, border가 포함되어있으면 outer,innerWidth로 계산 ***   
@@ -155,7 +155,7 @@ $(function () {
         }
     })    
     // 최신개봉작
-    let moviePosterLi = $('.posterWrap>li'); //10개
+    const moviePosterLi = $('.posterWrap>li'); //10개
 
     $('.newOpenTit').on("click",function(){
 
@@ -207,7 +207,7 @@ $(function () {
     });
 
     //-------------스낵리스트 페이드인아웃
-    let snack = $('.snackList>li');
+    const snack = $('.snackList>li');
     let idx = 0;
 
     function fadeSnackList() {
@@ -236,10 +236,10 @@ $(function () {
 
 
     //박스오피스(boxOffice)서브페이지   
-    let topMenuLi = $('.topMenu>li');
-    // let topMuneA = $('.topMenu>li>a')
-    // let movieWrap = $('.movieList_boxOffice'); //div
-    let movieList = $('.movieList_boxOffice>ul') 
+    const topMenuLi = $('.topMenu>li');
+    // const topMuneText = $('.topMenu>li>a')
+    // const movieWrap = $('.movieList_boxOffice'); //div
+    const movieList = $('.movieList_boxOffice>ul') 
 
     topMenuLi.on("click",function(){
         let idx = $(this).index();
@@ -250,8 +250,8 @@ $(function () {
 
 
     //-------------로그인 회원,비회원
-    let memberName = $('.memberSelect>span');
-    let memberLi = $('.loginTab>li'); //li
+    const memberName = $('.memberSelect>span');
+    const memberLi = $('.loginTab>li'); //li
     
     memberName.on("click",function(){
         let idx = $(this).index();

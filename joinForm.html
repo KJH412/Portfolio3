@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo3.png">
+    <title>씨네Q</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!--스크립트 연결 -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- #header -->
+    <header id="header"></header>
+    <!-- #container -->
+    <div id="container">
+        <h2 class="pageTitle">회원가입</h2>
+        <div class="joinForm_box">
+            <div class="joinForm_wrap">
+                <ul class="join_title_Wrap">
+                    <li class="select">1.이메일 입력(소셜 가입)</li>
+                    <li>2.정보 입력</li>
+                    <li>3.가입 완료</li>
+                </ul>
+                <form name="form_join" id="form_join">
+                    <div class="joinSocial_wrap">
+                        <div class="social_login"><span>소셜 계정으로 가입</span></div>
+                        <div class="socialBtn_wrap">
+                            <a href="#void" class="naver">네이버</a>
+                            <a href="#void" class="kakao">카카오</a>
+                        </div>
+                        <div class="email_login"><span>이메일 주소로 가입</span></div>
+                        <div class="label_wrap">
+                            <label class="label_email" for="email_id"> 아이디(이메일)</label>
+                            <input type="email" id="email_id" name="email" placeholder="이메일 주소를 입력하세요.">                                
+                        </div>
+                    </div>
+                </form>
+                <div class="joinBtn_wrap">
+                    <a href="#void" class="joinBtn">가입하기</a>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- #footer -->
+    <footer id="footer"></footer>
+</body>
+</html>

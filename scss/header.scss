@@ -196,7 +196,7 @@ header{
                     position: fixed;
                     top: 0;
                     background: rgba(255, 255, 255, 0.95);
-                    width: 60%;
+                    width: 100%;
                     height: 100vh;
                     z-index: 100;
                     transition: 0.5s;
@@ -216,7 +216,7 @@ header{
                         position: absolute;
                         right: 0;
                         top: 150px;
-                        line-height: 4;
+                        line-height: 4em;
                         text-align: center;
                     }
                     &:hover .sub{
@@ -226,7 +226,8 @@ header{
                         position: relative;  
                         padding: 0 40px;
                         @include respond($Mobile1000){
-                            // padding: 0;
+                            padding: 0 0 0 0;
+                            width: 120px;
                         }
 
                         >a{
@@ -235,7 +236,7 @@ header{
                             color: #333;
 
                             @include respond($Mobile1000){
-                                font-size: 23px;
+                                // font-size: 23px;
                             }   
                         }                        
                         >.sub{
@@ -255,7 +256,9 @@ header{
                             }
 
                             >li{
-                                // width: 100%;
+                                @include respond($Mobile1000){
+                                    line-height: 25px;
+                                }
                             
                                 a{
                                     font-size: 1.2em;   

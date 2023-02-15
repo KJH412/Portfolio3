@@ -20,6 +20,13 @@ $Mobile480:480px;
     height: 70vh;
     position: relative;
 
+    .pageTitle{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 25px;
+        color: #444;
+    }
+    //로그인
     .loginWrap{
         width: 600px;
         height: 500px;
@@ -179,16 +186,17 @@ $Mobile480:480px;
                         .naverLogin{
                             width: 50%;
                             color: #fff;
-                            background: green;
+                            background-color: rgb(36, 196, 31);
                             &:hover{
-                                background: darkgreen;
+                                background-color: darkgreen;
                             }
                         }
                         .kakaoLogin{
                             width: 49%;
-                            background: gold;
+                            background-color: gold;
+                            color: rgb(54, 31, 0);
                             &:hover{
-                                background: goldenrod;
+                                background-color: goldenrod;
                             }
                         }
                     }
@@ -255,4 +263,166 @@ $Mobile480:480px;
             }         
         }       
     }//loginWrap
+
+    //---회원가입
+    .joinForm_box{
+        width: 650px;
+        margin: 50px auto 0;
+        .joinForm_wrap{
+
+            .join_title_Wrap{ //ul
+                position: relative;
+                display: flex;
+                li{
+                    padding: 0 20px ;
+                    font-size: 1.3em;
+                    display: block;
+                    width: 200px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    background-color: #eee;
+                    border-right: 1px solid #ddd;
+                    color: #666;
+                    &:last-child{
+                        border-radius: none;
+                    }
+                }
+                .select{
+                    background-color: #b40c1a;
+                    color: #fff;
+                }               
+            }
+            form{
+                background-color: #efefef;
+                margin: 20px 0 0 0;
+                padding: 30px;
+                .joinSocial_wrap{
+
+                    .social_login{
+                        display: inline-block;
+                        
+                        span{
+                            display: block;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 30px;
+                            font-size: 1.3em;
+                            font-weight: bold;
+                            color: #666;
+                            text-align: center;
+                            position: relative;
+
+                            &:before{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 5px;
+                                height: 25px;
+                                background-color: #fff;
+                            }
+                            &:after{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                width: 1px;
+                                height: 30px;
+                                background-color: #ccc;
+                            }
+                        }
+                    }
+                    .socialBtn_wrap{
+                        display: inline-block;
+                        margin-left: 20px;
+                        >a{
+                            padding: 10px 30px;
+                            font-size: 1.2em;
+                            font-weight: bold;
+                            border-radius: 3px;
+                        }
+                        .naver{
+                            background-color: rgb(36, 196, 31);
+                            color: #fff;
+                        }
+                        .kakao{
+                            background-color: gold;
+                            color: rgb(54, 31, 0);
+                        }
+                    }
+                    .email_login{
+                        padding-top: 50px;
+                        display: inline-block;
+
+                        span{
+                            display: block;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 30px;
+                            font-size: 1.3em;
+                            font-weight: bold;
+                            color: #666;
+                            text-align: center;
+                            position: relative;
+
+                            &:before{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 5px;
+                                height: 25px;
+                                background-color: #fff;
+                            }
+                            &:after{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                width: 1px;
+                                height: 30px;
+                                background-color: #ccc;
+                            }
+                        }
+                    }
+                    .label_wrap{
+                        display: inline-block;
+                        height: 40px;
+                        line-height: 40px;
+                        margin-left: 20px;
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        label{
+                            padding-left: 10px;
+                            font-weight: bold;
+                        }
+                        input{
+                            border: none;
+                            outline: none;
+                            line-height: 30px;
+                            padding: 0 30px 0;
+                        }
+                    }
+                }               
+            }//form
+            .joinBtn_wrap{
+                margin: 30px auto;
+                background-color: #E60012;
+                width: 350px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                >a{
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
 }
