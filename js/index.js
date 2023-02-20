@@ -27,7 +27,7 @@ $(function () {
         toggleMenu();
     })
 
-    // -------------네비게이션    
+    // -------------네비게이션 메뉴   
     // PC
     $("#nav>li").on("mouseenter", function () {
         //console.log("마우스엔터");
@@ -56,8 +56,7 @@ $(function () {
         }
     })
 
-    //-------------스크롤 이벤트
-    //헤더
+    // -------------header 스크롤 이벤트
     $(window).scroll(function () {
         let scroll = $(window).scrollTop();
 
@@ -79,7 +78,7 @@ $(function () {
     });
 
 
-    //-------------메인배너 페이드인아웃
+    //메인배너--> 페이드인아웃 슬라이드
     let currentIndex = 0;
     const slides = $(".bannerWrap>li");
 
@@ -106,7 +105,7 @@ $(function () {
 
 
 
-    //-------------영화 포스터 슬라이드
+    //메인페이지-->영화 포스터 슬라이드
 
     //pc-보여지는 li는 5개로 설정, 다음버튼클릭하면 li 5개의 너비가 왼쪽으로 움직임.
     //**css수정 => li에 left가 아닌 ul의 부모에 overflow:hidden, ul에서 위치 조정.
@@ -173,7 +172,7 @@ $(function () {
 
 
     
-    //-------------리사이즈-------------
+    //-------------리사이즈
     function resizeInit() {
         
         winWidth = $(window).width();
@@ -206,7 +205,7 @@ $(function () {
         resizeInit();
     });
 
-    //-------------스낵리스트 페이드인아웃
+    //스낵리스트-->페이드인아웃 슬라이드
     const snack = $('.snackList>li');
     let idx = 0;
 
@@ -235,7 +234,7 @@ $(function () {
 
 
 
-    //박스오피스(boxOffice)서브페이지   
+    //-------------서브페이지 박스오피스(boxOffice)
     const topMenuLi = $('.topMenu>li');
     // const topMuneText = $('.topMenu>li>a')
     // const movieWrap = $('.movieList_boxOffice'); //div
@@ -249,7 +248,7 @@ $(function () {
     });
 
 
-    //-------------로그인 회원,비회원
+    //-------------서브페이지 로그인 회원,비회원 선택
     const memberName = $('.memberSelect>span');
     const memberLi = $('.loginTab>li'); //li
     
@@ -259,7 +258,8 @@ $(function () {
         memberLi.eq(idx).addClass('onThis').siblings().removeClass('onThis');     
         memberName.eq(idx).addClass('tab').siblings().removeClass('tab');
        
-    });
+    });   
+    
+})
 
 
-});

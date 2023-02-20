@@ -8,6 +8,8 @@ $Mobile1279:1279px;
 $Mobile1000:1000px;
 $Mobile767:767px;
 $Mobile480:480px;
+$Mobile375:375px; //iPhone SE
+$Mobile280:280px; //Galaxy Fold
 
 @mixin respond($media){
     @media screen and (max-width:$media) {
@@ -19,6 +21,9 @@ $Mobile480:480px;
     width: 100%;
     height: 70vh;
     position: relative;
+    @include respond($Mobile480){
+        height: 90vh;
+    } 
 
     .pageTitle{
         text-align: center;
@@ -38,7 +43,8 @@ $Mobile480:480px;
         transform: translate(50%, -50%);
 
         @include respond($Mobile480){
-            width: 100%;
+            width: 80%;
+            filter: none;
         }
         .popupColse{
             display: block;
@@ -49,9 +55,6 @@ $Mobile480:480px;
             padding: 5px 0;
             >img{
                 height: 100%;
-            }
-            @include respond($Mobile480){
-               opacity: 0;
             }
         }
         .memberSelect{
@@ -94,15 +97,22 @@ $Mobile480:480px;
             }
             .memberLoginWrap{ //li 회원
 
-                .loginContents{
+                .loginContents{                    
 
                     .meminputBox{
                         width: 350px;
                         margin: 0 auto;
+                        @include respond($Mobile480){
+                            width: 300px;
+                        } 
+
                         >span{
                             display: block;
                             padding: 30px 0;
                             font-size: 1em;
+                            @include respond($Mobile480){
+                                padding: 20px 0;
+                            } 
                         }
                         >label{
                             display: flex;
@@ -110,9 +120,15 @@ $Mobile480:480px;
                             justify-content: space-between;
                             padding: 5px 5px 5px 15px;
                             margin: 5px 0;
+                            @include respond($Mobile480){
+                                padding: 5px 5px 5px 10px;
+                            } 
                            
                             span{
-                                font-weight: bold;                             
+                                font-weight: bold;     
+                                @include respond($Mobile480){
+                                    font-size: 0.9em;
+                                }                         
                             }
                             input{
                                 width: 230px;
@@ -120,16 +136,17 @@ $Mobile480:480px;
                                 border: none;
                                 border-left: 1px solid #ccc;
                                 text-indent: 10px;
+                                @include respond($Mobile480){
+                                    width: 200px;
+                                }
                             }
-
-                        }
-                        
+                        }                        
                     }
                     >p{
                         width: 100%;
                         @include respond($Mobile480){
                             text-align: left;
-                            padding-left: 20px;
+                            // padding-left: 20px;                            
                          }
                         span{
                             padding: 0 65px;
@@ -143,6 +160,9 @@ $Mobile480:480px;
                         width: 350px;
                         height: 40px;
                         margin: 20px auto;
+                        @include respond($Mobile480){
+                            width: 300px;
+                        }
                         
                         a{
                             display: inline-block;
@@ -150,6 +170,9 @@ $Mobile480:480px;
                             line-height: 40px;
                             float: left;
                             color: #fff;
+                            @include respond($Mobile480){
+                                width: 49%;
+                            }                            
                         }
                         >.btnLogin{
                             width: 70%;
@@ -158,10 +181,17 @@ $Mobile480:480px;
                             &:hover{
                             background-color: #8d0b16;
                             }
+                            @include respond($Mobile480){
+                                width: 49%;
+                                margin-right: 3px;
+                            } 
                         }
                         >.btnJoin{
                             width: 27%;
                             background-color: #666;
+                            @include respond($Mobile480){
+                                width: 49%;
+                            }
                         }
                     }
                     .soc{
@@ -176,7 +206,10 @@ $Mobile480:480px;
                     .loginBtnBox_social{
                         width: 350px;
                         height: 40px;
-                        margin: 20px auto;                           
+                        margin: 20px auto;  
+                        @include respond($Mobile480){
+                            width: 300px;
+                        }                         
                         a{
                             display: inline-block;
                             height: 100%;
@@ -190,6 +223,9 @@ $Mobile480:480px;
                             &:hover{
                                 background-color: darkgreen;
                             }
+                            @include respond($Mobile480){
+                                width: 49%;
+                            }  
                         }
                         .kakaoLogin{
                             width: 49%;
@@ -207,17 +243,32 @@ $Mobile480:480px;
                 .loginContents{
                     width: 600px;
                     margin: 0 auto;
+                    @include respond($Mobile480){
+                        width: 300px; 
+                    } 
                     >div{
                         padding: 50px 0 0; 
+                        @include respond($Mobile480){
+                            padding: 10px 0 0; 
+                        } 
                     }
                     .nomemberLeft{
                         float: left;
                         width: 50%;
                         font-size: 0.8em;
+                        @include respond($Mobile480){
+                            width: 100%; 
+                        } 
                         .desc{ //ul
                             padding: 10px 30px 0 50px;
                             border-right: 1px solid #ccc;
                             height: 220px;
+                            @include respond($Mobile480){
+                                padding: 0 10px 0 20px;
+                                height: 130px; 
+                                border-right: none;
+                                border-bottom: 1px solid #ccc;
+                            } 
                             li{
                                 list-style:circle;
                                 line-height: 2;
@@ -227,7 +278,12 @@ $Mobile480:480px;
                     .nomemberRight{
                         float: left;
                         width: 40%;
-                        padding-left: 30px;                    
+                        padding-left: 30px;      
+                        @include respond($Mobile480){
+                            float: none;
+                            width: 100%;
+                            padding-left: 0;
+                        }              
                         div{ //공통
                             >label{
                                 width: 200px;
@@ -240,6 +296,9 @@ $Mobile480:480px;
                                     height: 30px;
                                     width: 90%;
                                     text-indent: 10px;
+                                    @include respond($Mobile480){
+                                        width: 100%;
+                                    } 
                                 }
                             }
                         }
@@ -252,6 +311,10 @@ $Mobile480:480px;
                     height: 40px;
                     margin: 30px auto 0;
                     cursor: pointer;
+                    @include respond($Mobile480){
+                        width: 100%;
+                        margin: 15px auto 0;
+                    } 
                     &:hover{
                         background-color: #8d0b16;
                     }
@@ -269,23 +332,26 @@ $Mobile480:480px;
         width: 650px;
         margin: 50px auto 0;
         .joinForm_wrap{
-
+            width: 650px;
             .join_title_Wrap{ //ul
                 position: relative;
                 display: flex;
+                width: 100%;
                 li{
-                    padding: 0 20px ;
+                    // padding: 0 20px ;
                     font-size: 1.3em;
+                    font-weight: bold;
                     display: block;
-                    width: 200px;
+                    width: 33.3%;
                     height: 50px;
                     line-height: 50px;
                     text-align: center;
-                    background-color: #eee;
+                    background-color: #ccc;
                     border-right: 1px solid #ddd;
                     color: #666;
+
                     &:last-child{
-                        border-radius: none;
+                        border-right: none;
                     }
                 }
                 .select{
@@ -338,19 +404,24 @@ $Mobile480:480px;
                     .socialBtn_wrap{
                         display: inline-block;
                         margin-left: 20px;
+                        width: 300px;
                         >a{
-                            padding: 10px 30px;
+                            display: inline-block;
+                            padding: 10px 0;
                             font-size: 1.2em;
                             font-weight: bold;
                             border-radius: 3px;
+                            text-align: center;
                         }
                         .naver{
-                            background-color: rgb(36, 196, 31);
+                            background-color: rgb(3, 199, 90);
                             color: #fff;
+                            width: 49%;
                         }
                         .kakao{
                             background-color: gold;
                             color: rgb(54, 31, 0);
+                            width: 49%;
                         }
                     }
                     .email_login{
@@ -392,11 +463,14 @@ $Mobile480:480px;
                     }
                     .label_wrap{
                         display: inline-block;
+                        width: 300px;
                         height: 40px;
                         line-height: 40px;
                         margin-left: 20px;
                         background-color: #fff;
                         border: 1px solid #ccc;
+                        box-sizing: border-box;
+                        position: relative;
                         label{
                             padding-left: 10px;
                             font-weight: bold;
@@ -404,8 +478,12 @@ $Mobile480:480px;
                         input{
                             border: none;
                             outline: none;
-                            line-height: 30px;
-                            padding: 0 30px 0;
+                            padding-left:20px;
+                        }
+                        #emailError{
+                            color: red;
+                            position: absolute;
+                            top: 30px;
                         }
                     }
                 }               
@@ -413,15 +491,18 @@ $Mobile480:480px;
             .joinBtn_wrap{
                 margin: 30px auto;
                 background-color: #E60012;
+                text-align: center;
                 width: 350px;
                 height: 40px;
                 line-height: 40px;
-                text-align: center;
-                >a{
+                button{
                     color: #fff;
                     font-weight: bold;
                     font-size: 1.3em;
+                    border: none;
+                    background: transparent;                    
                 }
+              
             }
         }
     }

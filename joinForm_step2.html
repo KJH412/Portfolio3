@@ -14,7 +14,6 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/script.js"></script>
 </head>
 <body>
     <!-- #header -->
@@ -25,12 +24,12 @@
         <div class="joinForm_box">
             <div class="joinForm_wrap">
                 <ul class="join_title_Wrap">
-                    <li class="select">1.이메일 입력(소셜 가입)</li>
-                    <li>2.정보 입력</li>
+                    <li>1.이메일 입력(소셜 가입)</li>
+                    <li class="select">2.정보 입력</li>
                     <li>3.가입 완료</li>
                 </ul>
                 <form name="form_join" id="form_join">
-                    <div class="joinSocial_wrap">
+                    <!-- <div class="joinSocial_wrap">
                         <div class="social_login"><span>소셜 계정으로 가입</span></div>
                         <div class="socialBtn_wrap">
                             <a href="#void" class="naver">네이버</a>
@@ -39,13 +38,13 @@
                         <div class="email_login"><span>이메일 주소로 가입</span></div>
                         <div class="label_wrap">
                             <label class="label_email" for="email_id"> 아이디(이메일)</label>
-                            <input type="text" id="email_id" name="email" placeholder="이메일 주소를 입력하세요.">                                
-                            <div id="emailError"></div>
+                            <input type="email" id="email_id" name="email" placeholder="이메일 주소를 입력하세요." required>                                
+                            <div id="emailError" class="error"></div>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
                 <div class="joinBtn_wrap">
-                    <button id="joinBtn" onclick="emailCheck()">다음단계</a>
+                    <button id="joinBtn">다음단계</a>
                 </div>
             </div>
         </div>        

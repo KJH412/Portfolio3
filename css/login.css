@@ -4,6 +4,11 @@
   height: 70vh;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  #container {
+    height: 90vh;
+  }
+}
 #container .pageTitle {
   text-align: center;
   margin-top: 50px;
@@ -24,7 +29,9 @@
 }
 @media screen and (max-width: 480px) {
   #container .loginWrap {
-    width: 100%;
+    width: 80%;
+    -webkit-filter: none;
+            filter: none;
   }
 }
 #container .loginWrap .popupColse {
@@ -37,11 +44,6 @@
 }
 #container .loginWrap .popupColse > img {
   height: 100%;
-}
-@media screen and (max-width: 480px) {
-  #container .loginWrap .popupColse {
-    opacity: 0;
-  }
 }
 #container .loginWrap .memberSelect {
   display: block;
@@ -84,10 +86,20 @@
   width: 350px;
   margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox {
+    width: 300px;
+  }
+}
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > span {
   display: block;
   padding: 30px 0;
   font-size: 1em;
+}
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > span {
+    padding: 20px 0;
+  }
 }
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > label {
   display: -webkit-box;
@@ -100,8 +112,18 @@
   padding: 5px 5px 5px 15px;
   margin: 5px 0;
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > label {
+    padding: 5px 5px 5px 10px;
+  }
+}
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > label span {
   font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > label span {
+    font-size: 0.9em;
+  }
 }
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > label input {
   width: 230px;
@@ -110,13 +132,17 @@
   border-left: 1px solid #ccc;
   text-indent: 10px;
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents .meminputBox > label input {
+    width: 200px;
+  }
+}
 #container .loginWrap .loginTab .memberLoginWrap .loginContents > p {
   width: 100%;
 }
 @media screen and (max-width: 480px) {
   #container .loginWrap .loginTab .memberLoginWrap .loginContents > p {
     text-align: left;
-    padding-left: 20px;
   }
 }
 #container .loginWrap .loginTab .memberLoginWrap .loginContents > p span {
@@ -132,12 +158,22 @@
   height: 40px;
   margin: 20px auto;
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox {
+    width: 300px;
+  }
+}
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox a {
   display: inline-block;
   height: 100%;
   line-height: 40px;
   float: left;
   color: #fff;
+}
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox a {
+    width: 49%;
+  }
 }
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox > .btnLogin {
   width: 70%;
@@ -147,9 +183,20 @@
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox > .btnLogin:hover {
   background-color: #8d0b16;
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox > .btnLogin {
+    width: 49%;
+    margin-right: 3px;
+  }
+}
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox > .btnJoin {
   width: 27%;
   background-color: #666;
+}
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox > .btnJoin {
+    width: 49%;
+  }
 }
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .soc {
   width: 350px;
@@ -165,6 +212,11 @@
   height: 40px;
   margin: 20px auto;
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox_social {
+    width: 300px;
+  }
+}
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox_social a {
   display: inline-block;
   height: 100%;
@@ -178,6 +230,11 @@
 }
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox_social .naverLogin:hover {
   background-color: darkgreen;
+}
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox_social .naverLogin {
+    width: 49%;
+  }
 }
 #container .loginWrap .loginTab .memberLoginWrap .loginContents .loginBtnBox_social .kakaoLogin {
   width: 49%;
@@ -194,18 +251,41 @@
   width: 600px;
   margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .nomemberLoginWrap .loginContents {
+    width: 300px;
+  }
+}
 #container .loginWrap .loginTab .nomemberLoginWrap .loginContents > div {
   padding: 50px 0 0;
+}
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .nomemberLoginWrap .loginContents > div {
+    padding: 10px 0 0;
+  }
 }
 #container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberLeft {
   float: left;
   width: 50%;
   font-size: 0.8em;
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberLeft {
+    width: 100%;
+  }
+}
 #container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberLeft .desc {
   padding: 10px 30px 0 50px;
   border-right: 1px solid #ccc;
   height: 220px;
+}
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberLeft .desc {
+    padding: 0 10px 0 20px;
+    height: 130px;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
 }
 #container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberLeft .desc li {
   list-style: circle;
@@ -215,6 +295,13 @@
   float: left;
   width: 40%;
   padding-left: 30px;
+}
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberRight {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+  }
 }
 #container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberRight div > label {
   width: 200px;
@@ -229,6 +316,11 @@
   width: 90%;
   text-indent: 10px;
 }
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .nomemberLoginWrap .loginContents .nomemberRight div > label input {
+    width: 100%;
+  }
+}
 #container .loginWrap .loginTab .nomemberLoginWrap .loginBtnBox_nomember {
   text-align: center;
   background: #b40c1a;
@@ -236,6 +328,12 @@
   height: 40px;
   margin: 30px auto 0;
   cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  #container .loginWrap .loginTab .nomemberLoginWrap .loginBtnBox_nomember {
+    width: 100%;
+    margin: 15px auto 0;
+  }
 }
 #container .loginWrap .loginTab .nomemberLoginWrap .loginBtnBox_nomember:hover {
   background-color: #8d0b16;
@@ -248,26 +346,30 @@
   width: 650px;
   margin: 50px auto 0;
 }
+#container .joinForm_box .joinForm_wrap {
+  width: 650px;
+}
 #container .joinForm_box .joinForm_wrap .join_title_Wrap {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 #container .joinForm_box .joinForm_wrap .join_title_Wrap li {
-  padding: 0 20px;
   font-size: 1.3em;
+  font-weight: bold;
   display: block;
-  width: 200px;
+  width: 33.3%;
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background-color: #eee;
+  background-color: #ccc;
   border-right: 1px solid #ddd;
   color: #666;
 }
 #container .joinForm_box .joinForm_wrap .join_title_Wrap li:last-child {
-  border-radius: none;
+  border-right: none;
 }
 #container .joinForm_box .joinForm_wrap .join_title_Wrap .select {
   background-color: #b40c1a;
@@ -315,20 +417,25 @@
 #container .joinForm_box .joinForm_wrap form .joinSocial_wrap .socialBtn_wrap {
   display: inline-block;
   margin-left: 20px;
+  width: 300px;
 }
 #container .joinForm_box .joinForm_wrap form .joinSocial_wrap .socialBtn_wrap > a {
-  padding: 10px 30px;
+  display: inline-block;
+  padding: 10px 0;
   font-size: 1.2em;
   font-weight: bold;
   border-radius: 3px;
+  text-align: center;
 }
 #container .joinForm_box .joinForm_wrap form .joinSocial_wrap .socialBtn_wrap .naver {
-  background-color: rgb(36, 196, 31);
+  background-color: rgb(3, 199, 90);
   color: #fff;
+  width: 49%;
 }
 #container .joinForm_box .joinForm_wrap form .joinSocial_wrap .socialBtn_wrap .kakao {
   background-color: gold;
   color: rgb(54, 31, 0);
+  width: 49%;
 }
 #container .joinForm_box .joinForm_wrap form .joinSocial_wrap .email_login {
   padding-top: 50px;
@@ -367,11 +474,15 @@
 }
 #container .joinForm_box .joinForm_wrap form .joinSocial_wrap .label_wrap {
   display: inline-block;
+  width: 300px;
   height: 40px;
   line-height: 40px;
   margin-left: 20px;
   background-color: #fff;
   border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
 }
 #container .joinForm_box .joinForm_wrap form .joinSocial_wrap .label_wrap label {
   padding-left: 10px;
@@ -380,19 +491,25 @@
 #container .joinForm_box .joinForm_wrap form .joinSocial_wrap .label_wrap input {
   border: none;
   outline: none;
-  line-height: 30px;
-  padding: 0 30px 0;
+  padding-left: 20px;
+}
+#container .joinForm_box .joinForm_wrap form .joinSocial_wrap .label_wrap #emailError {
+  color: red;
+  position: absolute;
+  top: 30px;
 }
 #container .joinForm_box .joinForm_wrap .joinBtn_wrap {
   margin: 30px auto;
   background-color: #E60012;
+  text-align: center;
   width: 350px;
   height: 40px;
   line-height: 40px;
-  text-align: center;
 }
-#container .joinForm_box .joinForm_wrap .joinBtn_wrap > a {
+#container .joinForm_box .joinForm_wrap .joinBtn_wrap button {
   color: #fff;
   font-weight: bold;
   font-size: 1.3em;
+  border: none;
+  background: transparent;
 }
