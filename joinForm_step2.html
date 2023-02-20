@@ -14,6 +14,7 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <!-- #header -->
@@ -24,27 +25,91 @@
         <div class="joinForm_box">
             <div class="joinForm_wrap">
                 <ul class="join_title_Wrap">
-                    <li>1.이메일 입력(소셜 가입)</li>
+                    <li>1.이메일 입력</li>
                     <li class="select">2.정보 입력</li>
                     <li>3.가입 완료</li>
                 </ul>
-                <form name="form_join" id="form_join">
-                    <!-- <div class="joinSocial_wrap">
-                        <div class="social_login"><span>소셜 계정으로 가입</span></div>
-                        <div class="socialBtn_wrap">
-                            <a href="#void" class="naver">네이버</a>
-                            <a href="#void" class="kakao">카카오</a>
+                <form name="form_info" id="form_info">
+                    <div class="join-detail">
+                        <label>선호지점</label>                   
+                        <select id="join-theater">
+                            <option>신도림</option>
+                            <option>청라</option>
+                            <option>경주보문</option>
+                            <option>구미봉곡</option>
+                            <option>충주연수</option>
+                            <option>천안불당</option>
+                            <option>전주영화의거리</option>
+                            <option>대구이시아</option>
+                            <option>알프스하동</option>
+                            <option>보은</option>
+                            <option>칠곡호이</option>
+                            <option>영천</option>
+                            <option>영덕예주</option>
+                        </select>
+                    </div>
+                    <div class="join-detail">
+                        <label for="join-email">아이디(이메일)</label>
+                        <input type="text" name="userId" id="join-email">
+                    </div>
+                    <div class="join-detail">
+                        <label for="join-pw">비밀번호</label>
+                        <input type="text" name="userPw" id="join-pw" placeholder="영문,숫자 포함 8자 이상">
+                    </div>
+                    <div class="join-detail">
+                        <label for="join-name">이름</label>
+                        <input type="text" name="userName" id="join-name">
+                    </div>
+                    <div class="join-detail">
+                        <label for="join-birth">생년월일</label>
+                        <input type="text" name="userBirth" id="join-birth">
+                    </div>
+                    <div class="join-detail">
+                        <label for="join-phone">휴대폰번호</label>
+                        <input type="text" name="userPhone" id="join-phone">
+                        <a href="#void">인증번호 받기</a>
+                    </div>
+                    <div class="join-detail">
+                        <label for="join-phoneCheck">인증번호 입력</label>
+                        <input type="text" name="userPhoneCheck" id="join-phoneCheck">
+                        <span>제한시간 3분</span>
+                    </div>
+                    <div class="join-detail">
+                        <input type="checkbox" name="acceptJoin" id="check01" value="true">
+                        <label for="check01">전체 동의합니다.</label>
+                    </div>
+                    <div class="join-detail">
+                        <input type="checkbox" name="acceptJoin" id="check02" value="true">
+                        <label for="check02">회원이용약관 동의(필수)<a href="#void">내용보기</a></label>
+                    </div>
+                    <div class="join-detail">
+                        <input type="checkbox" name="acceptJoin" id="check03" value="true">
+                        <label for="check03">개인정보처리방침 동의(필수)<a href="#void">내용보기</a></label>
+                    </div>
+                    <div class="join-detail">
+                        <input type="checkbox" name="acceptJoin" id="check04" value="true">
+                        <label for="check04">이메일,SMS,앱알람 수신 전체동의(선택)</label>
+                        <div class="oin-detail-sub">
+                            <span>
+                                <input type="checkbox" name="receiveEmail" value="true">
+                                <label>이메일</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="receiveSMS" value="true">
+                                <label>SMS</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="receiveApp" value="true">
+                                <label>앱알림</label>
+                            </span>
                         </div>
-                        <div class="email_login"><span>이메일 주소로 가입</span></div>
-                        <div class="label_wrap">
-                            <label class="label_email" for="email_id"> 아이디(이메일)</label>
-                            <input type="email" id="email_id" name="email" placeholder="이메일 주소를 입력하세요." required>                                
-                            <div id="emailError" class="error"></div>
-                        </div>
-                    </div> -->
+                    </div>
                 </form>
+                <div class="prevBtn_wrap">
+                    <button type="button" value="back" onclick="pageBack()">이전으로</button>
+                </div>
                 <div class="joinBtn_wrap">
-                    <button id="joinBtn">다음단계</a>
+                    <button type="button"onclick="infoCheck()">회원가입</a>
                 </div>
             </div>
         </div>        

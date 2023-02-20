@@ -327,18 +327,23 @@ $Mobile280:280px; //Galaxy Fold
         }       
     }//loginWrap
 
-    //---회원가입
+//-------회원가입
     .joinForm_box{
         width: 650px;
         margin: 50px auto 0;
+        @include respond($Mobile480){
+            width: 300px;
+        }
         .joinForm_wrap{
             width: 650px;
+            @include respond($Mobile480){
+                width: 100%;
+            }
             .join_title_Wrap{ //ul
                 position: relative;
                 display: flex;
                 width: 100%;
                 li{
-                    // padding: 0 20px ;
                     font-size: 1.3em;
                     font-weight: bold;
                     display: block;
@@ -349,6 +354,10 @@ $Mobile280:280px; //Galaxy Fold
                     background-color: #ccc;
                     border-right: 1px solid #ddd;
                     color: #666;
+                    @include respond($Mobile480){
+                        font-size: 1em;
+                        width: 100%;
+                    }
 
                     &:last-child{
                         border-right: none;
@@ -363,7 +372,10 @@ $Mobile280:280px; //Galaxy Fold
                 background-color: #efefef;
                 margin: 20px 0 0 0;
                 padding: 30px;
-                .joinSocial_wrap{
+                @include respond($Mobile480){
+                    padding: 15px;                        
+                }
+                .joinSocial_wrap{                   
 
                     .social_login{
                         display: inline-block;
@@ -378,6 +390,11 @@ $Mobile280:280px; //Galaxy Fold
                             color: #666;
                             text-align: center;
                             position: relative;
+                            @include respond($Mobile480){
+                                font-size: 1em;
+                                text-align: left;
+                                padding-left: 10px;
+                            }
 
                             &:before{
                                 content: "";
@@ -398,6 +415,9 @@ $Mobile280:280px; //Galaxy Fold
                                 width: 1px;
                                 height: 30px;
                                 background-color: #ccc;
+                                @include respond($Mobile480){
+                                    display: none;
+                                }
                             }
                         }
                     }
@@ -405,6 +425,10 @@ $Mobile280:280px; //Galaxy Fold
                         display: inline-block;
                         margin-left: 20px;
                         width: 300px;
+                        @include respond($Mobile480){
+                            margin-left: 0;
+                            width: 100%;
+                        }
                         >a{
                             display: inline-block;
                             padding: 10px 0;
@@ -427,6 +451,9 @@ $Mobile280:280px; //Galaxy Fold
                     .email_login{
                         padding-top: 50px;
                         display: inline-block;
+                        @include respond($Mobile480){
+                            padding-top: 30px;
+                        }
 
                         span{
                             display: block;
@@ -438,6 +465,11 @@ $Mobile280:280px; //Galaxy Fold
                             color: #666;
                             text-align: center;
                             position: relative;
+                            @include respond($Mobile480){
+                                font-size: 1em;
+                                text-align: left;
+                                padding-left: 10px;
+                            }
 
                             &:before{
                                 content: "";
@@ -458,6 +490,9 @@ $Mobile280:280px; //Galaxy Fold
                                 width: 1px;
                                 height: 30px;
                                 background-color: #ccc;
+                                @include respond($Mobile480){
+                                    display: none;
+                                }
                             }
                         }
                     }
@@ -471,6 +506,10 @@ $Mobile280:280px; //Galaxy Fold
                         border: 1px solid #ccc;
                         box-sizing: border-box;
                         position: relative;
+                        @include respond($Mobile480){
+                            width: 100%;
+                            margin-left: 0;
+                        }
                         label{
                             padding-left: 10px;
                             font-weight: bold;
@@ -479,6 +518,9 @@ $Mobile280:280px; //Galaxy Fold
                             border: none;
                             outline: none;
                             padding-left:20px;
+                            @include respond($Mobile480){
+                                padding-left: 5px;                        
+                            }
                         }
                         #emailError{
                             color: red;
@@ -490,17 +532,23 @@ $Mobile280:280px; //Galaxy Fold
             }//form
             .joinBtn_wrap{
                 margin: 30px auto;
-                background-color: #E60012;
                 text-align: center;
-                width: 350px;
-                height: 40px;
-                line-height: 40px;
+               
                 button{
                     color: #fff;
                     font-weight: bold;
                     font-size: 1.3em;
                     border: none;
-                    background: transparent;                    
+                    background: #E60012;
+                    width: 350px;
+                    height: 40px;
+                    line-height: 40px;
+                    @include respond($Mobile480){
+                        width: 100%;
+                    }
+                    &:hover{
+                      filter: drop-shadow(1px 1px 2px #666);
+                    }
                 }
               
             }

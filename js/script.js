@@ -24,8 +24,16 @@ const emailCheck = () => {
 }
 
 //회원가입 폼-2
+const pageBack=()=>{
+    // history.go(-1);
+    history.back();
+    console.log("이전페이지로");
 
-
+}
+// function pageBack(){
+//     history.back();
+//     console.log("이전페이지로");
+// }
 
 
 
