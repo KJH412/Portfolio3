@@ -20,4 +20,4 @@
 - HTML5
 - SCSS
 - jQuery
-- 
+- Javascript
