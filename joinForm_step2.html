@@ -31,48 +31,55 @@
                 </ul>
                 <form name="form_info" id="form_info">
                     <div class="join-detail">
-                        <label>선호지점</label>                   
-                        <select id="join-theater">
-                            <option>신도림</option>
-                            <option>청라</option>
-                            <option>경주보문</option>
-                            <option>구미봉곡</option>
-                            <option>충주연수</option>
-                            <option>천안불당</option>
-                            <option>전주영화의거리</option>
-                            <option>대구이시아</option>
-                            <option>알프스하동</option>
-                            <option>보은</option>
-                            <option>칠곡호이</option>
-                            <option>영천</option>
-                            <option>영덕예주</option>
-                        </select>
+                        <label>선호지점                  
+                            <select id="join-theater">
+                                <option>신도림</option>
+                                <option>청라</option>
+                                <option>경주보문</option>
+                                <option>구미봉곡</option>
+                                <option>충주연수</option>
+                                <option>천안불당</option>
+                                <option>전주영화의거리</option>
+                                <option>대구이시아</option>
+                                <option>알프스하동</option>
+                                <option>보은</option>
+                                <option>칠곡호이</option>
+                                <option>영천</option>
+                                <option>영덕예주</option>
+                            </select>
+                        </label> 
                     </div>
                     <div class="join-detail">
-                        <label for="join-email">아이디(이메일)</label>
-                        <input type="text" name="userId" id="join-email">
+                        <label for="join-email">아이디(이메일)
+                            <input type="text" name="userId" id="join-email" placeholder="이메일을 입력하세요.">    
+                        </label>       
                     </div>
                     <div class="join-detail">
-                        <label for="join-pw">비밀번호</label>
-                        <input type="text" name="userPw" id="join-pw" placeholder="영문,숫자 포함 8자 이상">
+                        <label for="join-pw">비밀번호
+                            <input type="text" name="userPw" id="join-pw" placeholder="영문,숫자 포함 8자 이상">
+                        </label>   
                     </div>
                     <div class="join-detail">
-                        <label for="join-name">이름</label>
-                        <input type="text" name="userName" id="join-name">
+                        <label for="join-name">이름
+                            <input type="text" name="userName" id="join-name" placeholder="실명을 입력하세요.">
+                        </label>   
                     </div>
                     <div class="join-detail">
-                        <label for="join-birth">생년월일</label>
-                        <input type="text" name="userBirth" id="join-birth">
+                        <label for="join-birth">생년월일
+                            <input type="text" name="userBirth" id="join-birth" placeholder="20230101">
+                        </label>   
                     </div>
                     <div class="join-detail">
-                        <label for="join-phone">휴대폰번호</label>
-                        <input type="text" name="userPhone" id="join-phone">
-                        <a href="#void">인증번호 받기</a>
+                        <label for="join-phone">휴대폰번호
+                            <a href="#void" class="userNum">인증번호 받기</a>
+                            <input type="text" name="userPhone" id="join-phone" placeholder="휴대폰번호 입력">                        
+                        </label>   
                     </div>
                     <div class="join-detail">
-                        <label for="join-phoneCheck">인증번호 입력</label>
-                        <input type="text" name="userPhoneCheck" id="join-phoneCheck">
-                        <span>제한시간 3분</span>
+                        <label for="join-phoneCheck">인증번호 입력
+                            <span class="timeLimit">제한시간 3분</span>
+                            <input type="text" name="userPhoneCheck" id="join-phoneCheck" placeholder="인증번호 입력">                          
+                        </label>   
                     </div>
                     <div class="join-detail">
                         <input type="checkbox" name="acceptJoin" id="check01" value="true">
@@ -80,11 +87,11 @@
                     </div>
                     <div class="join-detail">
                         <input type="checkbox" name="acceptJoin" id="check02" value="true">
-                        <label for="check02">회원이용약관 동의(필수)<a href="#void">내용보기</a></label>
+                        <label for="check02">회원이용약관 동의(필수)<a href="#void" class="lookTxt">내용보기</a></label>
                     </div>
                     <div class="join-detail">
                         <input type="checkbox" name="acceptJoin" id="check03" value="true">
-                        <label for="check03">개인정보처리방침 동의(필수)<a href="#void">내용보기</a></label>
+                        <label for="check03">개인정보처리방침 동의(필수)<a href="#void" class="lookTxt">내용보기</a></label>
                     </div>
                     <div class="join-detail">
                         <input type="checkbox" name="acceptJoin" id="check04" value="true">
