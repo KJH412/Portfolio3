@@ -19,17 +19,22 @@ $Mobile280:280px; //Galaxy Fold
 
 #container{
     width: 100%;
-    height: 70vh;
+    // height: 70vh;
+    height: 100vh;
     position: relative;
     @include respond($Mobile480){
-        height: 90vh;
+        height: 100vh;
+        top: -140px;
     } 
 
     .pageTitle{
         text-align: center;
-        margin-top: 50px;
+        margin-top: 150px;
         font-size: 25px;
         color: #444;
+        @include respond($Mobile480){
+            margin-top: 200px;            
+        } 
     }
     //로그인
     .loginWrap{
@@ -38,11 +43,12 @@ $Mobile280:280px; //Galaxy Fold
         background: #fff;
         filter: drop-shadow(1px 1px 5px #666);
         position: absolute;
-        top: 50%;
+        top: 35%;
         right: 50%;
         transform: translate(50%, -50%);
 
         @include respond($Mobile480){
+            top: 50%;
             width: 80%;
             filter: none;
         }
@@ -195,9 +201,9 @@ $Mobile280:280px; //Galaxy Fold
                         }
                     }
                     .soc{
-                        width: 350px;
-                        text-align: left;
-                        margin: 0 auto;
+                        width: 100%;
+                        text-align: center;
+                        margin: 0 auto; 
                         >a{
                             padding-left: 30px;
                             color: blue;
@@ -368,7 +374,7 @@ $Mobile280:280px; //Galaxy Fold
                     color: #fff;
                 }               
             }
-            form{
+            form{ 
                 background-color: #efefef;
                 margin: 20px 0 0 0;
                 padding: 30px;
@@ -528,8 +534,52 @@ $Mobile280:280px; //Galaxy Fold
                             top: 30px;
                         }
                     }
-                }               
-            }//form
+                }      
+                //step-2 form
+                .join-detail{       
+                    margin: 10px auto;  
+                    display: block;
+                    width: 300px;      
+
+                    select{
+                        border: 1px solid #ccc;
+                        font-size: 0.95em;
+                    }
+                    >label{
+                        font-weight: bold;     
+                         
+                        >input{
+                            width: 100%;
+                            box-sizing: border-box;
+                            display: block;
+                            margin: 5px 0;
+                            padding: 5px;
+                            // border: 1px solid #ccc;
+                            border: none;
+                            border-radius: 5px;
+                            font-size: 0.9em;
+                            @include respond($Mobile480){
+                                width: 90%;          
+                            } 
+                        }
+                        .userNum{
+                            color: #fff;
+                            background: #666;
+                            padding: 5px;
+                            border-radius: 8px;
+                            font-size: 0.8em;
+                        }
+                        .timeLimit{
+                            color: red;
+                            padding-left: 10px;
+                        }
+                        .lookTxt{
+                            color: blue;
+                            padding-left: 20px;
+                        }
+                    } 
+                }   
+            }
             .joinBtn_wrap{
                 margin: 30px auto;
                 text-align: center;
@@ -549,8 +599,16 @@ $Mobile280:280px; //Galaxy Fold
                     &:hover{
                       filter: drop-shadow(1px 1px 2px #666);
                     }
+                }              
+            }
+            .prevBtn_wrap{
+                margin: 5px 0 0;
+                button{
+                    color: #fff;
+                    background: $hovColor;
+                    border: none;
+                    padding: 5px;
                 }
-              
             }
         }
     }
