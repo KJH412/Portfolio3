@@ -27,13 +27,8 @@ const emailCheck = () => {
 const pageBack=()=>{
     // history.go(-1);
     history.back();
-    console.log("이전페이지로");
-
+    console.log("이전 페이지");
 }
-// function pageBack(){
-//     history.back();
-//     console.log("이전페이지로");
-// }
 
 
 
