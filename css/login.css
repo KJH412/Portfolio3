@@ -10,15 +10,35 @@
     top: -140px;
   }
 }
-#container .pageTitle {
+#container .joinCheckIcon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 50%;
+  top: -100px;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+#container .joinCheckIcon img {
+  width: 100%;
+}
+#container .pageTitle, #container .pageTitle_join {
   text-align: center;
   margin-top: 150px;
   font-size: 25px;
   color: #444;
 }
 @media screen and (max-width: 480px) {
-  #container .pageTitle {
+  #container .pageTitle, #container .pageTitle_join {
     margin-top: 200px;
+  }
+}
+#container .pageTitle_join {
+  margin-top: 300px;
+}
+@media screen and (max-width: 480px) {
+  #container .pageTitle_join {
+    margin-top: 400px;
   }
 }
 #container .loginWrap {
@@ -395,7 +415,7 @@
   border-right: none;
 }
 #container .joinForm_box .joinForm_wrap .join_title_Wrap .select {
-  background-color: #b40c1a;
+  background-color: #E60012;
   color: #fff;
 }
 #container .joinForm_box .joinForm_wrap form {

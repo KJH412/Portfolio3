@@ -9,7 +9,6 @@ $Mobile1000:1000px;
 $Mobile767:767px;
 $Mobile480:480px;
 $Mobile375:375px; //iPhone SE
-$Mobile280:280px; //Galaxy Fold
 
 @mixin respond($media){
     @media screen and (max-width:$media) {
@@ -19,15 +18,25 @@ $Mobile280:280px; //Galaxy Fold
 
 #container{
     width: 100%;
-    // height: 70vh;
     height: 100vh;
     position: relative;
     @include respond($Mobile480){
         height: 100vh;
         top: -140px;
     } 
-
-    .pageTitle{
+    //step-3 아이콘
+    .joinCheckIcon{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        right: 50%;
+        top: -100px;
+        transform: translateX(50%);
+        img{
+            width: 100%;
+        }
+    }
+    .pageTitle,.pageTitle_join{
         text-align: center;
         margin-top: 150px;
         font-size: 25px;
@@ -35,6 +44,12 @@ $Mobile280:280px; //Galaxy Fold
         @include respond($Mobile480){
             margin-top: 200px;            
         } 
+    }
+    .pageTitle_join{
+        margin-top: 300px;
+        @include respond($Mobile480){
+            margin-top: 400px;            
+        }
     }
     //로그인
     .loginWrap{
@@ -370,7 +385,7 @@ $Mobile280:280px; //Galaxy Fold
                     }
                 }
                 .select{
-                    background-color: #b40c1a;
+                    background-color: $mainColor;
                     color: #fff;
                 }               
             }

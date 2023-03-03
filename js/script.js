@@ -28,10 +28,20 @@ const pageBack=()=>{
     // history.go(-1);
     history.back();
     console.log("이전 페이지");
+}    
+const joinFin=()=>{
+    let link = 'http://127.0.0.1:5500/joinForm_step3.html';
+    location.href=link;
+    location.replace(link);
+    window.open(link);
 }
-
-
-
+//회원가입 폼-3
+const loginLink=()=>{
+    let link = 'http://127.0.0.1:5500/login.html';
+    location.href=link;
+    location.replace(link);
+    window.open(link);
+}
 
 /* 로그인 */
 

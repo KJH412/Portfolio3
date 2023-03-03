@@ -62,7 +62,7 @@ $(function () {
 
         if (winWidth > 1000) {
             if (scroll > 300) {
-                $("header").css("position", "fixed");
+                $("header").css({"position":"fixed","top":"0"});
                 $(".headerTop").css("display", "none");
                 $(".headerBottom").css("margin-top", "10px");
             }
