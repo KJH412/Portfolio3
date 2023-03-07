@@ -158,11 +158,12 @@ header .headerBox .headerTop .gnbWrap .rightGnb > li a:hover img {
   }
 }
 header .headerBox .headerTop .gnbWrap .rightGnb > li a > div {
-  width: 30px;
+  width: 100%;
   height: 30px;
 }
 header .headerBox .headerTop .gnbWrap .rightGnb > li a > div img {
   width: 100%;
+  height: 100%;
 }
 header .headerBox .headerTop .gnbWrap .rightGnb > li a span {
   word-break: keep-all;
