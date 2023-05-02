@@ -11,7 +11,7 @@
 - 단독작업(개인100%)
 
 ### 제작 페이지
--  <a href="https://kjh412.github.io/cineQ">메인페이지/<a>
+-  <a href="https://kjh412.github.io/cineQ">메인페이지<a>
 -  <a href="https://kjh412.github.io/cineQ/boxOffice.html">영화메뉴 페이지</a>
 -  <a href="https://kjh412.github.io/cineQ/login.html">로그인 페이지</a>
 -  <a href="https://kjh412.github.io/cineQ/joinForm.html">회원가입</a>
