@@ -11,14 +11,14 @@
 - 단독작업(개인100%)
 
 ### 제작 페이지
-- 메인페이지 <a>https://kjh412.github.io/cineQ/<a>
-- 영화메뉴 페이지 <a>https://kjh412.github.io/cineQ/boxOffice.html</a>
-- 로그인 페이지 <a>https://kjh412.github.io/cineQ/login.html</a>
-- 회원가입 <a>https://kjh412.github.io/cineQ/joinForm.html</a>
-- [업데이트 예정] : 상세정보, 영화예매
+-  <a href="https://kjh412.github.io/cineQ">메인페이지/<a>
+-  <a href="https://kjh412.github.io/cineQ/boxOffice.html">영화메뉴 페이지</a>
+-  <a href="https://kjh412.github.io/cineQ/login.html">로그인 페이지</a>
+-  <a href="https://kjh412.github.io/cineQ/joinForm.html">회원가입</a>
 
 ### 작업
 - HTML5
 - SCSS
 - jQuery
 - Javascript
+- VSCode
